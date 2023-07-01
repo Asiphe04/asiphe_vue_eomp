@@ -7,24 +7,21 @@
 </template>
 
 <style lang="scss">
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
 nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  padding: 5px;
 }
+:root{
+     --primary-color: #121212;
+     --secondary-color: #FF004F;
+     ---tertiary: #2B2A2A;
+    }
+
 </style>
