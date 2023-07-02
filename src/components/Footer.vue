@@ -48,7 +48,7 @@ section {
   color: white !important;
   margin: 5px !important ;
   padding: 5px !important;
-  font-size: x-large !important;
+  font-size: xx-large !important;
 }
 .social-icons a {
   color: white !important;
