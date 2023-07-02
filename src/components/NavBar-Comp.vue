@@ -234,7 +234,7 @@
   background-color: var(--bg-color);
   border-radius: 100%;
   border: 2px solid var(--main-color);
-  box-shadow: 4px 4px var(--main-color);
+ 
 }
 
 .input {

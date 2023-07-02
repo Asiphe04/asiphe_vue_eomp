@@ -1,7 +1,5 @@
 <template>
-    <section class="text-light">
-      <hr class="my-4" />
-
+    <section >
       <div class="footer-container text-center">
         <p class="text-white">
           Copyright &copy; 2023 All Rights Reserved by Asiphe Ndimlana
@@ -34,22 +32,17 @@ section {
   background-color: var(--tertiary-color);
 }
 #Facebook:hover {
-  color: rgb(2, 8, 120) !important;
+  color:#3b5998;
 }
 #Twitter:hover {
-  color: skyblue !important;
+  color:#00acee;
 }
-#Instagram:hover {
-  color: purple !important;
-}
+
 #Github:hover {
-  color: green !important;
-}
-#Youtube:hover {
-  color: red !important;
+  color:#171515;
 }
 #linkedIn:hover {
-  color: blue !important;
+  color: #0072b1;
 }
 .footer-container a {
   color: white !important;
@@ -61,7 +54,7 @@ section {
   color: white !important;
   margin:0 10px !important ;
   padding: 5px !important;
-  font-size: xx-large !important;
+  font-size: 25px !important;
 }
 
 </style>
