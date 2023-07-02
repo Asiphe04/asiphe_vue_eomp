@@ -29,7 +29,6 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
   </div>
-  <div class="img"></div>
 </template>
 
 <script>
@@ -42,14 +41,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style >
-.img{
-  width: 4344px;
-height: 4208px;
-border-radius: 4344px;
-background: url(https://i.postimg.cc/BQ6qBFFM/messi.jpg), lightgray 50% ;
-background: no-repeat;
-}
+<style scoped lang="scss">
 h3 {
   margin: 40px 0 0;
 }
