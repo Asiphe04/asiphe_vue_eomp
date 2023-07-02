@@ -1,12 +1,17 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-
-  </nav>
+ <NavBarComp/>
+ <FooterComp/>
   <router-view/>
 </template>
+<script>
 
+import NavBarComp from './components/NavBar-Comp.vue';
+import FooterComp from './components/Footer-Comp.vue';
+export default{
+ components :{ FooterComp, NavBarComp}
+}
+
+</script>
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 #app {
