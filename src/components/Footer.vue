@@ -1,5 +1,5 @@
 <template>
-    <section class="text-light py-3">
+    <section class="text-light">
       <hr class="my-4" />
 
       <div class="footer-container text-center">
@@ -16,7 +16,7 @@
             ><i class="fa-brands fa-twitter" id="Twitter"></i
           ></a>
           <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B8h9wTBRuSt2U75xVavKEoA%3D%3D" target="_blank"
-            ><i class="fa-brands fa-linkedIn" id="linkedIn"></i
+            ><i class="fa-brands fa-linkedin" id="linkedIn"></i
           ></a>
           <a href="https://github.com/Asiphe04" target="_blank"
             ><i class="fa-brands fa-github" id="Github"></i
@@ -31,7 +31,7 @@
 <style>
 
 section {
-  background-color: #010409 !important;
+  background-color: var(--tertiary-color);
 }
 #Facebook:hover {
   color: rgb(2, 8, 120) !important;
@@ -59,9 +59,9 @@ section {
 }
 .social-icons a {
   color: white !important;
-  margin: 5px !important ;
+  margin:0 10px !important ;
   padding: 5px !important;
-  font-size: x-large !important;
+  font-size: xx-large !important;
 }
 
 </style>
