@@ -1,11 +1,12 @@
 <template>
+  <router-link :to="{name: 'project', params: {id: project.id}}">
     <div class="container">
-      <div class="card">
-          <p class="title">Card title</p>
+      <div class="card col-4 {{ project.category }}">
+          <p class="title">{{project.itemName}}</p>
           <div class="card-hidden">
-              <p class="title-in">Card title</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie pellentesque mi nec lacinia.</p>
-              <a href="https://github.com/Asiphe04" target="_blank"
+              <p class="title-in">{{project.itemName}}</p>
+              <p>{{ project.desc }}</p>
+              <a href="{{ project.link }}" target="_blank"
             ><i class="fa-brands fa-github" id="Github"></i
           ></a>
           </div>
@@ -13,15 +14,17 @@
       </div>
       <div class="card-border"></div>
   </div>
-
+</router-link>
 </template>
 
 
 <script>
-    export default{}
+    export default{
+      props: ["project"]
+    }
 </script>
 
-<style>
+<style scoped>
 .card-hidden a{
      color: white !important;
   margin:0 10px !important ;
