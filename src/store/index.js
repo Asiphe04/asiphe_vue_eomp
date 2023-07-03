@@ -15,12 +15,12 @@ export default createStore({
   },
   actions: {
     getProject: async (context, id) => {
-      fetch("" + id)
+      fetch("https://asiphe04.github.io/data/projects.json/" + id)
         .then((response) => response.json())
         .then((project) => context.commit("setProject", project));
     },
     getProjects: async (context) => {
-      fetch("")
+      fetch("https://asiphe04.github.io/data/projects.json")
         .then((response) => response.json())
         .then((projects) => context.commit("setProjects", projects));
     },
