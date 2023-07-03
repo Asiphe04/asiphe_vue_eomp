@@ -1,8 +1,18 @@
 <template>
-  <router-link :to="{name: 'project', params: {id: project.id}}">
+    <!-- <div :to="{name: 'products', params: {id: product.id}}" >
+    <div class="Card">
+      <img :src="product.Image" :alt="product.name" id="product-imgs" />
+      <h3>{{ product.name }}</h3>
+      <p>R {{ product.price }}</p>
+      <button @click="addToCart(product.id)" class="addbtn mb-5">
+        Add to cart
+      </button>
+    </div>
+</div> -->
+  <div :to="{name: 'projects', params: {id: project.id}}">
     <div class="container">
-      <div class="card col-4 {{ project.category }}">
-          <p class="title">{{project.itemName}}</p>
+      <div class="card col-4 {{ proj-ect.category }}">
+          <p class="title">{{project.projName}}</p>
           <div class="card-hidden">
               <p class="title-in">{{project.itemName}}</p>
               <p>{{ project.desc }}</p>
@@ -14,7 +24,7 @@
       </div>
       <div class="card-border"></div>
   </div>
-</router-link>
+</div>
 </template>
 
 
