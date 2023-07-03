@@ -12,12 +12,10 @@
   <div :to="{name: 'projects', params: {id: project.id}}">
     <div class="container">
       <div class="card col-4 {{ project.category }}">
+        <img src="https://i.postimg.cc/rwrkhW0f/cook.jpg" alt="">
           <p class="title">{{project.projName}}</p>
           <div class="card-hidden">
-              <p class="title-in">
-                {{project.projName}}
-                
-              </p>
+             
               <p>{{ project.desc }}</p>
               <a href="#" target="_blank"
             ><i class="fa-brands fa-github" id="Github"></i
@@ -40,8 +38,6 @@
 <style scoped>
 .card-hidden a{
      color: white !important;
-  margin:0 10px !important ;
-  padding: 5px !important;
   font-size: xx-large !important;
 }
 #Github:hover {
@@ -71,7 +67,7 @@
   display: flex;
   transform: translateY(200%);
   flex-direction: column;
-  gap: .5rem;
+  /* gap: .5rem; */
   transition: transform .5s ease-in, opacity .3s ease-in;
   opacity: 0;
 }
@@ -115,26 +111,4 @@
   font-weight: 700;
   font-size: 1.25rem;
 }
-
-/*Button*/
-.button {
-  display: inline-flex;
-  justify-content: center;
-  padding: 8px;
-  border-radius: 24px;
-  font-weight: 600;
-  background-color: #5bc0eb;
-  cursor: pointer;
-  transition: background-color .3s ease-in-out;
-}
-
-.button:hover {
-  background-color: #53aed4;
-}
-
-
-
-
-
-
 </style>
