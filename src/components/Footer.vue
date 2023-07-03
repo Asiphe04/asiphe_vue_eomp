@@ -26,25 +26,13 @@
 <script>
     export default{}
 </script>
-<style>
+<style scoped>
 
 section {
   
   background-color: var(--tertiary-color);
 }
-#Facebook:hover {
-  color:#3b5998;
-}
-#Twitter:hover {
-  color:#00acee;
-}
 
-#Github:hover {
-  color:#171515;
-}
-#linkedIn:hover {
-  color: #0072b1;
-}
 .footer-container a {
   color: white !important;
   margin: 5px !important ;
@@ -56,6 +44,9 @@ section {
   margin:0 10px !important ;
   padding: 5px !important;
   font-size: 25px !important;
+}
+.social-icons a :hover{
+  color: var(--secondary-color);
 }
 
 </style>
