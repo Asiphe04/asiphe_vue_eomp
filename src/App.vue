@@ -1,28 +1,35 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-
-  </nav>
+ <NavBarComp/>
   <router-view/>
+  <!-- <CardComp/> -->
+ <Footer/>
 </template>
-
-<style lang="scss">
-  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-#app {
-  font-family: 'Inter', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+<script>
+import NavBarComp from './components/NavBar-Comp.vue';
+import Footer from './components/Footer.vue'
+// import CardComp from './components/Card-Comp.vue'
+export default{
+ components :{ NavBarComp, Footer,
+  // CardComp
+  }
 }
+</script>
 
-nav {
-  padding: 5px;
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+ 
+  text-align: center;
+  color:white;
+  background-color: var(--primary-color);
 }
 :root{
-     --primary-color: #121212;
-     --secondary-color: #FF004F;
-     ---tertiary: #2B2A2A;
+        --primary-color: #121212;
+        --secondary-color: #FF004F;
+        --tertiary-color: #2B2A2A;
     }
 
+
 </style>
+
+

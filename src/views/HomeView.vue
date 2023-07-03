@@ -25,11 +25,12 @@ button {
   border: 3px ridge  #FF004F;
   outline: none;
   background-color: transparent;
-  color: black;
+  color: white;
   transition: 1s;
   border-radius: 0.3em;
   font-size: 16px;
   font-weight: bold;
+  margin:14px
 }
 
 button::after {
@@ -39,7 +40,7 @@ button::after {
   left: 3%;
   width: 95%;
   height: 40%;
-  background-color: white;
+  background-color: var(--primary-color);
   transition: 0.5s;
   transform-origin: center;
 }
@@ -52,7 +53,7 @@ button::before {
   left: 3%;
   width: 95%;
   height: 40%;
-  background-color: white;
+  background-color: var(--primary-color);
   transition: 0.5s;
 }
 
@@ -65,7 +66,7 @@ button:hover {
 }
 
 .container{
-
+ margin-top: 40px;
     width: 320px;
   height: 320px;
   border-radius: 50%;
