@@ -2,7 +2,7 @@
 <h1>Contact</h1>
 <div class="container d-flex">
     <div class="col-6 m-4">
-        <span class="title">Leave a Comment</span>
+        <span class="title">Leave a Message</span>
   <form class="form">
     <div class="group">
     <input placeholder="‎" type="text" required="">
@@ -14,9 +14,9 @@
     </div>
 <div class="group">
     <textarea placeholder="‎" id="comment" name="comment" rows="5" required=""></textarea>
-    <label for="comment">Comment</label>
+    <label for="comment">Message</label>
 </div>
-    <button type="submit">Submit</button>
+    <button type="submit">Send!</button>
   </form> 
     </div>
     <div class="col-6 m-4" id="contact-img">  
