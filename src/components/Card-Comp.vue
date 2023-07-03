@@ -11,12 +11,15 @@
 </div> -->
   <div :to="{name: 'projects', params: {id: project.id}}">
     <div class="container">
-      <div class="card col-4 {{ proj-ect.category }}">
+      <div class="card col-4 {{ project.category }}">
           <p class="title">{{project.projName}}</p>
           <div class="card-hidden">
-              <p class="title-in">{{project.itemName}}</p>
+              <p class="title-in">
+                {{project.projName}}
+                
+              </p>
               <p>{{ project.desc }}</p>
-              <a href="{{ project.link }}" target="_blank"
+              <a href="#" target="_blank"
             ><i class="fa-brands fa-github" id="Github"></i
           ></a>
           </div>
