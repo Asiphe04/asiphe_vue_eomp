@@ -1,14 +1,28 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
 
 export default createStore({
   state: {
-  },
-  getters: {
+    project: null,
+    projects: null,
   },
   mutations: {
+    setProject: (state, project) => {
+      state.project = project;
+    },
+    setProjects: (state, projects) => {
+      state.projects = projects;
+    },
   },
   actions: {
+    getProject: async (context, id) => {
+      fetch("" + id)
+        .then((response) => response.json())
+        .then((project) => context.commit("setProject", project));
+    },
+    getProjects: async (context) => {
+      fetch("")
+        .then((response) => response.json())
+        .then((projects) => context.commit("setProjects", projects));
+    },
   },
-  modules: {
-  }
-})
+});
