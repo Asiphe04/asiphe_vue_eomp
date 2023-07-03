@@ -29,6 +29,7 @@
 <style>
 
 section {
+  
   background-color: var(--tertiary-color);
 }
 #Facebook:hover {
