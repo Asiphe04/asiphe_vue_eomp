@@ -22,9 +22,19 @@
 </div>
 </template>
 <script>
-export default {
-    
-}
+  import TestimonialCardComp from "@/components/Testimonial-Card-Comp.vue"
+  export default {
+    computed:{
+      testimonials(){
+        return this.$store.state.testimonials
+      }
+    },
+      mounted(){
+        this.$store.dispatch("getTestimonials")
+      },
+      components: {TestimonialCardComp}
+   
+  }
 </script>
 <style scoped>
 .scrollable-div {
