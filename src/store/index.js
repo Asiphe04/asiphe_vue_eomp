@@ -25,7 +25,7 @@ export default createStore({
       fetch("https://asiphe04.github.io/data/testimonials.json")
         .then((response) => response.json())
         .then((testimonials) =>
-          context.commit("getTestimonials", testimonials)
+          context.commit("setTestimonials", testimonials)
         );
     },
   },
