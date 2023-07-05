@@ -32,13 +32,14 @@
 </div>
 
 </template>
+<script>
+</script>
 <style scoped>
-    .card {
-  width: 195px;
-  height: 285px;
+.card {
+  width: 250px;
+  height: 250px;
   background: #313131;
-  border-radius: 20px;
-  ;
+  border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,6 +47,7 @@
   color: white;
   transition: 0.2s ease-in-out;
 }
+
 
 .img {
   height: 30%;
