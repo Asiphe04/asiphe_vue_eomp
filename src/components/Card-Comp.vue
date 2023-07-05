@@ -1,6 +1,6 @@
 <template>
   <div :to="{name: 'projects', params: {id: project.id}}">
-    <div class="container">
+    <div class="container m-3">
       <div class="card col-4 {{ project.category }}">
         <img :src="project.img" alt="" class="projImg">
           <p class="title">{{project.projName}}</p>

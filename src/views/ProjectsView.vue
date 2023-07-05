@@ -1,25 +1,24 @@
 <template>
  <h1>My projects</h1>
- <h3  class="text-start text-center">A list of projects I've done</h3>
+ <div class="container">
+  <h3  class="text-start text-center">A list of projects I've done</h3>
  <h4 class="text-start m-2">PS : I'm still designing this page, please visit my GitHub for better understanding of my work or skills.</h4>
- <div class="wrapper">
-  <div class="option">
-    <input class="input" type="radio" name="btn" value="option1" checked="">
-    <div class="btn">
-      <span class="span">Option</span>
-    </div>
-  </div>
-  <div class="option">
-    <input class="input" type="radio" name="btn" value="option2">
-    <div class="btn">
-      <span class="span">Option</span>
-    </div>  </div>
-  <div class="option">
-    <input class="input" type="radio" name="btn" value="option3">
-    <div class="btn">
-      <span class="span">Option</span>
-    </div>  
-  </div>
+ <div class="radio-inputs m-3 justify-content-center align-items-center">
+  <label class="radio">
+    <input type="radio" name="radio" checked="">
+    <span class="name">HTML,CSS</span>
+  </label>
+  <label class="radio">
+    <input type="radio" name="radio">
+    <span class="name">JS</span>
+  </label>
+      
+  <label class="radio">
+    <input type="radio" name="radio">
+    <span class="name">Vue</span>
+  </label>
+</div>
+<p>Hover for more details</p>
 </div>
    <div v-if="projects" class="products_container row row-cols-4 m-0">
    <CardComp v-for="project of projects" :key="project.id" :project="project" />
@@ -42,59 +41,44 @@
   }
 </script>
 <style scoped>
-  .wrapper {
-  --font-color-dark: #323232;
-  --font-color-light: #FFF;
-  --bg-color: #fff;
-  --main-color: #323232;
+  .radio-inputs {
   position: relative;
-  width: 250px;
-  height: 36px;
-  background-color: var(--bg-color);
-  border: 2px solid var(--main-color);
-  border-radius: 34px;
   display: flex;
-  flex-direction: row;
-  box-shadow: 4px 4px var(--main-color);
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #EEE;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 14px;
 }
 
-.option {
-  width: 80.5px;
-  height: 28px;
-  position: relative;
-  top: 2px;
-  left: 2px;
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
 }
 
-.input {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  appearance: none;
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
   cursor: pointer;
-}
-
-.btn {
-  width: 100%;
-  height: 100%;
-  background-color: var(--bg-color);
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgba(51, 65, 85, 1);
+  transition: all .15s ease-in-out;
 }
 
-.span {
-  color: var(--font-color-dark);
-}
-
-.input:checked + .btn {
-  background-color: var(--main-color);
-}
-
-.input:checked + .btn .span {
-  color: var(--font-color-light);
+.radio-inputs .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
 }
 </style>
+
+
