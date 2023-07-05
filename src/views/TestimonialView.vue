@@ -1,12 +1,13 @@
 <template>
-<h1>This is testimonial page</h1>
-<p>*scroll on testimonial</p>
+<h1>My testimonial</h1>
+
 <div class="container d-flex">
 <div class="hey col-6 ">
-  <h1>This is a list of people who I have testimonials of</h1>
+  <h1 class="mt-5">What people say about me:</h1>
 </div>
     <div class="col-6 scrollable-div">
       <div v-if="testimonials">
+        <p>*scroll here</p>
    <TestCardComp v-for="testimonial of testimonials" :key="testimonial.id" :testimonial="testimonial" />
    </div>
    <div v-else><h1>Error:404</h1></div>
@@ -38,9 +39,8 @@
 .scrollable-div {
   width: 60%;
     border-radius: 2px solid green;
-  height: 600px; 
+  height: 509px; 
   /* width: 50%; */
   overflow: auto; 
 }
-
 </style>

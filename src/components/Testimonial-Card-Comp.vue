@@ -1,12 +1,12 @@
 <template>
-    <div :to="{name: 'testimonials', params: {id: testimonial.id}}">
-      <div class="container">
-        <div class="card">
-          <div class="card-img">
-            <img :src="testimonial.img" alt="" class="projImg">
+    <div :to="{name: 'testimonials', params: {id: testimonial.id}}" class="main m-2">
+      <div class="container mb-2">
+        <div class="card text-white justify-content-center align-items-center text-center">
+          <div class="card-img mt-2">
+            <img :src="testimonial.img" alt="" class="TestImg">
           </div>
           <div class="card-body">
-            <h6>{{ testimonial.fullName }}</h6>
+            <h5>{{ testimonial.fullName }}</h5>
             <p>{{ testimonial.role }}</p>
             <p>"{{ testimonial.desc }}"</p>
           </div>
@@ -21,5 +21,22 @@
     }
 </script>
 <style scoped>
-
+.card-img{
+  
+  width: 400px;
+  height: 260px;
+}
+.TestImg{
+  border-radius: 2%;
+  width: 400px;
+  height: 260px;
+}
+.card{
+ height: 455px;
+  background-color: #141414;
+}
+.main{
+  border-radius: 2%;
+  border: 1px solid var(--secondary-color);;
+}
 </style>
