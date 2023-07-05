@@ -1,16 +1,15 @@
 <template>
  <NavBarComp/>
   <router-view/>
-  <!-- <CardComp/> -->
+ 
  <Footer/>
 </template>
 <script>
 import NavBarComp from './components/NavBar-Comp.vue';
 import Footer from './components/Footer.vue'
-// import CardComp from './components/Card-Comp.vue'
 export default{
  components :{ NavBarComp, Footer,
-  // CardComp
+
   }
 }
 </script>
