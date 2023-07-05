@@ -1,18 +1,8 @@
 <template>
-    <!-- <div :to="{name: 'products', params: {id: product.id}}" >
-    <div class="Card">
-      <img :src="product.Image" :alt="product.name" id="product-imgs" />
-      <h3>{{ product.name }}</h3>
-      <p>R {{ product.price }}</p>
-      <button @click="addToCart(product.id)" class="addbtn mb-5">
-        Add to cart
-      </button>
-    </div>
-</div> -->
   <div :to="{name: 'projects', params: {id: project.id}}">
     <div class="container">
       <div class="card col-4 {{ project.category }}">
-        <img src="https://i.postimg.cc/rwrkhW0f/cook.jpg" alt="">
+        <img :src="project.img" alt="" class="projImg">
           <p class="title">{{project.projName}}</p>
           <div class="card-hidden">
              
@@ -36,6 +26,9 @@
 </script>
 
 <style scoped>
+.projImg{
+  height: 150px !important;
+}
 .card-hidden a{
      color: white !important;
   font-size: xx-large !important;
