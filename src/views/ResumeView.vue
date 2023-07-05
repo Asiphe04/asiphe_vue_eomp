@@ -1,3 +1,3 @@
 <template>
-<h1>This is dash page</h1>
+<h1>My Resume</h1>
 </template>

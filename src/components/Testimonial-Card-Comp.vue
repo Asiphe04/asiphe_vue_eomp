@@ -2,9 +2,9 @@
     <div :to="{name: 'testimonials', params: {id: testimonial.id}}" class="main m-2">
       <div class="container mb-2">
         <div class="card text-white justify-content-center align-items-center text-center">
-          <div class="card-img mt-2">
-            <img :src="testimonial.img" alt="" class="TestImg">
-          </div>
+          <!-- <div class="card-img mt-2"> -->
+            <img :src="testimonial.img" alt="" class="TestImg mt-2">
+          <!-- </div> -->
           <div class="card-body">
             <h5>{{ testimonial.fullName }}</h5>
             <p>{{ testimonial.role }}</p>
@@ -22,14 +22,15 @@
 </script>
 <style scoped>
 .card-img{
-  
-  width: 400px;
+ 
+  width: 200px;
   height: 260px;
 }
 .TestImg{
   border-radius: 2%;
-  width: 400px;
+  width: 300px;
   height: 260px;
+ object-fit: cover; 
 }
 .card{
  height: 455px;
