@@ -8,7 +8,7 @@
           <div class="card-body">
             <h6>{{ testimonial.fullName }}</h6>
             <p>{{ testimonial.role }}</p>
-            <p>{{ testimonial.desc }}</p>
+            <p>"{{ testimonial.desc }}"</p>
           </div>
         </div>
       </div> 
