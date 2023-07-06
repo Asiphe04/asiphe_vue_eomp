@@ -126,6 +126,7 @@ export default {
   font-weight: 600;
 }
 #img-container{
+  border-radius: 3%;
   margin-bottom: 15px;
   height: 494px;
   background-image: url("https://i.postimg.cc/j5yJmsND/C12-Asiphe-Ndimlana-3.jpg");
