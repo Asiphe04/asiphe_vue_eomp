@@ -1,7 +1,8 @@
 <template>
-<h1>My Resume</h1>
+<h1 class="m-1">My Resume</h1>
 <div class="container d-flex">
-  <div class="col-6" id="img-container">
+  <div class="lol col-6">
+    <img src="https://i.postimg.cc/HnxfC1bg/IMG-20230420-WA0018.jpg" alt="" id="img-container">
 </div>
 <div class="col-6">
   <p>Hover for more details</p>
@@ -125,11 +126,17 @@ export default {
   background-color: #fff;
   font-weight: 600;
 }
+.lol{
+  margin-bottom: 15px;
+  height: 486px;
+  border-radius: 5%;
+  background-repeat: no-repeat;
+}
 #img-container{
   margin-bottom: 15px;
-  height: 494px;
-  background-image: url("https://i.postimg.cc/j5yJmsND/C12-Asiphe-Ndimlana-3.jpg");
-  background-size: cover;
-  background-position: center;
+  height: 486px;
+  background-image: url("https://i.postimg.cc/HnxfC1bg/IMG-20230420-WA0018.jpg");
+ border-radius: 5%;
+  background-repeat: no-repeat;
 }
 </style>

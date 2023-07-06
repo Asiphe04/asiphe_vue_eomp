@@ -81,7 +81,6 @@
 /*Hovers*/
 .card:hover {
   transform: translate(-15px, -15px);
-  border-color: #5bc0eb;
 }
 
 .card:hover .card-hidden {

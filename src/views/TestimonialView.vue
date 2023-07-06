@@ -1,5 +1,5 @@
 <template>
-<h1>My testimonial</h1>
+<h1  class="m-1">My testimonial</h1>
 
 <div class="container d-flex">
 <div class="hey col-6 ">

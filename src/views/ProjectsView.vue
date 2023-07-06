@@ -1,23 +1,7 @@
 <template>
- <h1>My projects</h1>
+ <h1  class="m-1">My projects</h1>
  <div class="container">
   <h3  class="text-start text-center">A list of projects I've done</h3>
- <h4 class="text-start m-2">PS : I'm still designing this page, please visit my GitHub for better understanding of my work or skills.</h4>
- <div class="radio-inputs m-3 justify-content-center align-items-center ">
-  <label class="radio">
-    <input type="radio" name="radio" checked="">
-    <span class="name">HTML,CSS</span>
-  </label>
-  <label class="radio">
-    <input type="radio" name="radio">
-    <span class="name ">JS</span>
-  </label>
-      
-  <label class="radio">
-    <input type="radio" name="radio">
-    <span class="name">Vue</span>
-  </label>
-</div>
 <p>Hover for more details</p>
 </div>
    <div v-if="projects" class="products_container row row-cols-4 m-0">

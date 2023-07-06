@@ -3,10 +3,11 @@
 
   <div class="container d-flex m-4">
       <div class="content col-6">
-        <img src="https://i.postimg.cc/rwrkhW0f/cook.jpg" alt="" id="content-img">
+        <img src="https://i.postimg.cc/QxYF9Vrr/IMG-20220430-WA0004.jpg" alt="" id="content-img">
         <h2 class="text-center">Front-End Developer</h2>
         <button >
-   ! CV
+         <img src="https://i.postimg.cc/rFv7yXwN/icons8-download-24.png" alt=""> 
+         CV
 </button>   
       </div>
       <div class="content col-6 ms-2" id="content-text">
@@ -104,14 +105,32 @@ button:hover {
   padding-left: 20px;
   width: 63% !important;
 }
-#content-img{
+/* #content-img{
   border-radius: 6%;
     height: 350px;
     width: 100%;
-    /* background-size: cover; */
-  /* background-position: center; */
-  /* background: no-repeat; */
- /* background-image: url("https://i.postimg.cc/rwrkhW0f/cook.jpg"); */
+} */
+#content-img{
+  border-radius: 6%;
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
 }
 
+@media (min-width: 300px) {
+    .content {
+      height: auto;
+      margin-bottom: 20px;
+    }
+    #content-text {
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 700px) {
+    .content {
+      height: 469px;
+    }
+  }
 </style>

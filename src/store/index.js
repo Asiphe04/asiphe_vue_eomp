@@ -27,26 +27,48 @@ export default createStore({
   },
   actions: {
     getProjects: async (context) => {
-      fetch("https://asiphe04.github.io/data/projects.json")
-        .then((response) => response.json())
-        .then((projects) => context.commit("setProjects", projects));
+      try {
+        const response = await fetch(
+          "https://asiphe04.github.io/data/projects.json"
+        );
+        const projects = await response.json();
+        context.commit("setProjects", projects);
+      } catch (error) {
+        console.error("Error fetching projects:", error);
+      }
     },
     getTestimonials: async (context) => {
-      fetch("https://asiphe04.github.io/data/testimonials.json")
-        .then((response) => response.json())
-        .then((testimonials) =>
-          context.commit("setTestimonials", testimonials)
+      try {
+        const response = await fetch(
+          "https://asiphe04.github.io/data/testimonials.json"
         );
+        const testimonials = await response.json();
+        context.commit("setTestimonials", testimonials);
+      } catch (error) {
+        console.error("Error fetching testimonials:", error);
+      }
     },
     getSkills: async (context) => {
-      fetch("https://asiphe04.github.io/data/skills.json")
-        .then((response) => response.json())
-        .then((skills) => context.commit("setSkills", skills));
+      try {
+        const response = await fetch(
+          "https://asiphe04.github.io/data/skills.json"
+        );
+        const skills = await response.json();
+        context.commit("setSkills", skills);
+      } catch (error) {
+        console.error("Error fetching skills:", error);
+      }
     },
     getTimelines: async (context) => {
-      fetch("https://asiphe04.github.io/data/education.json")
-        .then((response) => response.json())
-        .then((timelines) => context.commit("setTimelines", timelines));
+      try {
+        const response = await fetch(
+          "https://asiphe04.github.io/data/education.json"
+        );
+        const timelines = await response.json();
+        context.commit("setTimelines", timelines);
+      } catch (error) {
+        console.error("Error fetching timelines:", error);
+      }
     },
   },
 });

@@ -1,5 +1,5 @@
 <template>
-<h1>Contact</h1>
+<h1  class="m-1">Contact</h1>
 <div class="container d-flex">
     <div class="col-6 m-4">
         <span class="title">Leave a Message</span>
@@ -31,9 +31,10 @@
 </script>
 <style scoped>
 #contact-img{
+  border-radius: 3%;
     height: 350px;
     width: 500px;
-    background-image: url("https://i.postimg.cc/CM40Kjpn/stink.jpg");
+    background-image: url("https://i.postimg.cc/zGr9kGjy/IMG-20220430-WA0017.jpg");
     background-size: cover;
   background-position: center;
 }
