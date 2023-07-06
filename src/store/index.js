@@ -27,48 +27,24 @@ export default createStore({
   },
   actions: {
     getProjects: async (context) => {
-      try {
-        const response = await fetch(
-          "https://asiphe04.github.io/data/projects.json"
-        );
-        const projects = await response.json();
-        context.commit("setProjects", projects);
-      } catch (error) {
-        console.error("Error fetching projects:", error);
-      }
+      fetch("https://asiphe04.github.io/data/db.json")
+        .then((response) => response.json())
+        .then((data) => context.commit("setProjects", data.projects));
     },
     getTestimonials: async (context) => {
-      try {
-        const response = await fetch(
-          "https://asiphe04.github.io/data/testimonials.json"
-        );
-        const testimonials = await response.json();
-        context.commit("setTestimonials", testimonials);
-      } catch (error) {
-        console.error("Error fetching testimonials:", error);
-      }
+      fetch("https://asiphe04.github.io/data/db.json")
+        .then((response) => response.json())
+        .then((data) => context.commit("setTestimonials", data.testimonials));
     },
     getSkills: async (context) => {
-      try {
-        const response = await fetch(
-          "https://asiphe04.github.io/data/skills.json"
-        );
-        const skills = await response.json();
-        context.commit("setSkills", skills);
-      } catch (error) {
-        console.error("Error fetching skills:", error);
-      }
+      fetch("https://asiphe04.github.io/data/db.json")
+        .then((response) => response.json())
+        .then((data) => context.commit("setSkills", data.skills));
     },
     getTimelines: async (context) => {
-      try {
-        const response = await fetch(
-          "https://asiphe04.github.io/data/education.json"
-        );
-        const timelines = await response.json();
-        context.commit("setTimelines", timelines);
-      } catch (error) {
-        console.error("Error fetching timelines:", error);
-      }
+      fetch("https://asiphe04.github.io/data/db.json")
+        .then((response) => response.json())
+        .then((data) => context.commit("setTimelines", data.education));
     },
   },
 });

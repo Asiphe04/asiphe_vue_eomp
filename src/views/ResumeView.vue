@@ -26,12 +26,13 @@
 </div>
    <div v-else-if="activeTab === 'education'" class="timeline">
   <h2>Education</h2>
+  <p>*hover</p>
   <ul>
     <timelineComp v-for="timeline of timelines" :key="timeline.id" :timeline="timeline" />
   </ul>
 </div>
 <div v-if="activeTab === 'experience'" class="experience">
-  <h1>None (Yet)</h1>
+  <h1 class="text-start">None (Yet)</h1>
 
 </div>
 </div>
