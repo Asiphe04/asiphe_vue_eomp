@@ -86,14 +86,16 @@
 
 .form .group input:focus,
 .form .group textarea:focus {
+  background-color: white;
   border-color: var(--secondary-color);
 }
 
 .form .group input:focus+ label, .form .group textarea:focus +label {
-  top: -10px;
+  top: -20px;
   left: 10px;
-  background-color: var(--primary-color);
-  color: white;
+  background-color: transparent;
+  border-radius: 5%;
+  color: var(--secondary-color);
   font-size: 14px;
 }
 
