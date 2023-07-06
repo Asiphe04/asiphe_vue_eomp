@@ -1,30 +1,28 @@
 <template>
   <h1 class="text-center">About me</h1>
 
-  <div class="container d-flex m-4">
-      <div class="content col-6">
+  <div class="container d-flex m-3">
+      <div class="content col-6" id="img-container">
         <img src="https://i.postimg.cc/QxYF9Vrr/IMG-20220430-WA0004.jpg" alt="" id="content-img">
-        <h2 class="text-center">Front-End Developer</h2>
+        <h2 id="desc" class="text-center">Front-End Developer</h2>
         <button >
          <img src="https://i.postimg.cc/rFv7yXwN/icons8-download-24.png" alt=""> 
          CV
 </button>   
       </div>
       <div class="content col-6 ms-2" id="content-text">
-      <p class="lead-text text-start"> ... from pathways to lines of codes Hello world!,</p>
-      <p class="lead-text text-start">I'm Asiphe Ndimlana, an energetic and dedicated frontend developer based in the famous city, Cape Town</p>
+      <p class="lead-text text-start" id="second-text">I'm Asiphe Ndimlana, an energetic and dedicated frontend developer based in Cape Town</p>
       <p class="lead-text text-start">My journey in coding began in 2019, during my Grade 10 year. Initially in High School I dabbled in Delphi 7 and 10 before pivoting to focus on HTML, CSS, Javascript and many more.</p>
       <p class="lead-text text-start"></p>
-      <p class="lead-text text-start">As a developer, I adopt a formal tone of voice in myprofessional interactions.</p>
+      <p class="lead-text text-start" id="second-last-text">As a dev, I adopt a formal tone of voice in my professional interactions.</p>
      
-      <p class="lead-text text-start">On a more personal note, I spend my time working on my
-      numerous
+      <p class="lead-text text-start" id="last-text"> I spend my time working on my
+      
       <a class="text-link text-decoration-none" href="/projects">projects</a >
        <br />
        Feel free to
       <a class="text-link text-decoration-none" href="/contact">reach out</a >
-      if you want to talk about work, technology or just geek
-      out in general</p>
+      </p>
       </div>
 
    
@@ -96,41 +94,77 @@ button:hover {
 }
 .lead-text{
   margin: 5px ;
- font-size: 24px;
+ font-size: 20px;
 }
 .text-link{
   color: var(--secondary-color);
 }
 #content-text{
-  padding-left: 20px;
-  width: 63% !important;
+  /* padding-left: 20px; */
+  width: 50% ;
 }
-/* #content-img{
-  border-radius: 6%;
-    height: 350px;
-    width: 100%;
-} */
+
 #content-img{
   border-radius: 6%;
   height: 350px;
   width: 100%;
   object-fit: cover;
 }
-
-@media (min-width: 300px) {
-    .content {
-      height: auto;
-      margin-bottom: 20px;
-    }
-    #content-text {
-      padding-left: 0;
-      width: 100%;
-    }
+@media screen and (max-width: 767px) , (max-width: 776px) {
+  .container {
+    flex-direction: column;
   }
-
-  @media (min-width: 700px) {
-    .content {
-      height: 469px;
-    }
+  #content-img{
+    height: 150px;
   }
+  .lead-text{
+  margin: 5px ;
+ font-size: 13px;
+}
+.content{
+  margin: 5px;
+  width:90% !important;
+  height: 220px;
+}
+#desc{
+  font-size: 18px !important;
+}
+button{
+  display: none;
+}
+.container{
+  margin: 0px !important;
+}
+/* #second-text{
+  display: none;
+} */
+/* #second-last-text{
+  display: none;
+} */
+#last-text{
+  display: none;
+}
+
+ .lead-text{
+         word-wrap: break-word;
+    overflow-wrap: break-word;
+    }
+
+
+  }
+  @media only screen and (min-width: 600px) and (max-width: 776px) {
+     .container {
+    display: flex;
+  }
+    .content{
+      width: 50% !important;
+    }
+    .container{
+      align-items: center;
+    }
+    .lead-text{
+         word-wrap: break-word;
+    overflow-wrap: break-word;
+    }
+}
 </style>
