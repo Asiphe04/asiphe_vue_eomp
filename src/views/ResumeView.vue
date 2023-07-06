@@ -1,116 +1,135 @@
 <template>
 <h1>My Resume</h1>
-    <!-- <div class="container">
-        <div class="col-6" id="resume-img">
+<div class="container d-flex">
+  <div class="col-6" id="img-container">
+</div>
+<div class="col-6">
+  <p>Hover for more details</p>
+  <div class="radio-inputs m-3 justify-content-center align-items-center ">
+  <label class="radio">
+    <input type="radio" name="radio" checked="" v-model="activeTab" value="skills">
+    <span class="name">Skills</span>
+  </label>
+  <label class="radio">
+    <input type="radio" name="radio" v-model="activeTab" value="experience">
+    <span class="name ">Experience</span>
+  </label>
+      
+  <label class="radio">
+    <input type="radio" name="radio" v-model="activeTab" value="education">
+    <span class="name">Education</span>
+  </label>
+</div>
+<div v-if="activeTab === 'skills'" class="d-flex flex-wrap">
+  <SkillsComp v-for="skill of skills" :key="skill.id" :skill="skill" />
+</div>
+   <div v-else-if="activeTab === 'education'" class="timeline">
+  <h2>Education</h2>
+  <ul>
+    <timelineComp v-for="timeline of timelines" :key="timeline.id" :timeline="timeline" />
+  </ul>
+</div>
+<div v-if="activeTab === 'experience'" class="experience">
+  <h1>None (Yet)</h1>
 
-        </div>
-        <div class="col-6">
-            
-        </div>
-    </div> -->
-    <div class="card">
-  <svg class="img" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 784.37 1277.39" xmlns:xlink="http://www.w3.org/1999/xlink">
- <g id="Layer_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-  <g id="_1421394342400">
-   <g>
-    <polygon fill="#343434" fill-rule="nonzero" points="392.07,0 383.5,29.11 383.5,873.74 392.07,882.29 784.13,650.54"></polygon>
-    <polygon fill="#8C8C8C" fill-rule="nonzero" points="392.07,0 -0,650.54 392.07,882.29 392.07,472.33"></polygon>
-    <polygon fill="#3C3C3B" fill-rule="nonzero" points="392.07,956.52 387.24,962.41 387.24,1263.28 392.07,1277.38 784.37,724.89"></polygon>
-    <polygon fill="#8C8C8C" fill-rule="nonzero" points="392.07,1277.38 392.07,956.52 -0,724.89"></polygon>
-    <polygon fill="#141414" fill-rule="nonzero" points="392.07,882.29 784.13,650.54 392.07,472.33"></polygon>
-    <polygon fill="#393939" fill-rule="nonzero" points="0,650.54 392.07,882.29 392.07,472.33"></polygon>
-   </g>
-  </g>
- </g>
-</svg>
-  <div class="textBox">
-    <p class="text head">Ethereum</p>
-    <span>Cryptocurrency</span>
-    <p class="text price">1.654,34€</p>
-  </div>
+</div>
+</div>
 </div>
 
+
 </template>
+
 <script>
+import SkillsComp from "@/components/Skills-Comp.vue";
+import timelineComp from "@/components/timeline-Comp.vue";
+
+export default {
+  data() {
+    return {
+      activeTab: 'skills'
+    };
+  },
+  computed: {
+    skills() {
+      return this.$store.state.skills;
+    },
+    timelines() {
+      return this.$store.state.timelines;
+    },
+  },
+  mounted() {
+    this.$store.dispatch("getSkills");
+    this.$store.dispatch("getTimelines");
+  },
+  components: { SkillsComp, timelineComp }
+};
 </script>
+
 <style scoped>
-.card {
-  width: 250px;
-  height: 250px;
-  background: #313131;
-  border-radius: 50%;
+.name{
+  color: darkgray !important;
+}
+.timeline ul{
+  list-style-type:none;
+  border-left:2px solid var(--secondary-color);
+  padding:10px 5px;
+}
+.timeline{
+  width:500px;
+  color:#fff;
+  padding:30px 20px;
+  box-shadow:0px 0px 10px rgba(0,0,0,.5);
+}
+@media (max-width:300px){
+  .timeline{
+    width:100%;
+    padding:30px 5px 30px 10px;
+  }
+
+}
+  .radio-inputs {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-color);
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 14px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
-  color: white;
-  transition: 0.2s ease-in-out;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgba(51, 65, 85, 1);
+  transition: all .15s ease-in-out;
 }
 
-
-.img {
-  height: 30%;
-  position: absolute;
-  transition: 0.2s ease-in-out;
-  z-index: 1;
+.radio-inputs .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
 }
-
-.textBox {
-  opacity: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  transition: 0.2s ease-in-out;
-  z-index: 2;
+#img-container{
+  margin-bottom: 15px;
+  height: 494px;
+  background-image: url("https://i.postimg.cc/j5yJmsND/C12-Asiphe-Ndimlana-3.jpg");
+  background-size: cover;
+  background-position: center;
 }
-
-.textBox > .text {
-  font-weight: bold;
-}
-
-.textBox > .head {
-  font-size: 20px;
-}
-
-.textBox > .price {
-  font-size: 17px;
-}
-
-.textBox > span {
-  font-size: 12px;
-  color: lightgrey;
-}
-
-.card:hover > .textBox {
-  opacity: 1;
-}
-
-.card:hover > .img {
-  height: 65%;
-  filter: blur(7px);
-  animation: anim 3s infinite;
-}
-
-@keyframes anim {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.card:hover {
-  transform: scale(1.04) rotate(-1deg);
-}
-
-
 </style>

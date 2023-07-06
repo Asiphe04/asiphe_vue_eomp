@@ -6,6 +6,10 @@ export default createStore({
     projects: null,
     testimonial: null,
     testimonials: null,
+    skill: null,
+    skills: null,
+    timeline: null,
+    timelines: null,
   },
   mutations: {
     setProjects: (state, projects) => {
@@ -13,6 +17,12 @@ export default createStore({
     },
     setTestimonials: (state, testimonials) => {
       state.testimonials = testimonials;
+    },
+    setSkills: (state, skills) => {
+      state.skills = skills;
+    },
+    setTimelines: (state, timelines) => {
+      state.timelines = timelines;
     },
   },
   actions: {
@@ -27,6 +37,16 @@ export default createStore({
         .then((testimonials) =>
           context.commit("setTestimonials", testimonials)
         );
+    },
+    getSkills: async (context) => {
+      fetch("https://asiphe04.github.io/data/skills.json")
+        .then((response) => response.json())
+        .then((skills) => context.commit("setSkills", skills));
+    },
+    getTimelines: async (context) => {
+      fetch("https://asiphe04.github.io/data/education.json")
+        .then((response) => response.json())
+        .then((timelines) => context.commit("setTimelines", timelines));
     },
   },
 });
