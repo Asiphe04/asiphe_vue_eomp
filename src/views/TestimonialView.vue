@@ -1,3 +1,46 @@
 <template>
-<h1>This is dash page</h1>
+<h1>My testimonial</h1>
+
+<div class="container d-flex">
+<div class="hey col-6 ">
+  <h1 class="mt-5">What people say about me:</h1>
+</div>
+    <div class="col-6 scrollable-div">
+      <div v-if="testimonials">
+        <p>*scroll here</p>
+   <TestCardComp v-for="testimonial of testimonials" :key="testimonial.id" :testimonial="testimonial" />
+   </div>
+   <div v-else><h1>Error:404</h1></div>
+</div>
+</div>
 </template>
+
+<script>
+  import TestCardComp from "@/components/Testimonial-Card-Comp.vue"
+  export default {
+    computed:{
+      testimonials(){
+        return this.$store.state.testimonials
+      }
+    },
+      mounted(){
+        this.$store.dispatch("getTestimonials")
+      },
+      components: {TestCardComp}
+   
+  }
+</script>
+
+<style scoped>
+.hey{ 
+  /* background-image: url("https://i.postimg.cc/PJz0CT2T/TABLES.png"); */
+  width: 40%;
+ }
+.scrollable-div {
+  width: 60%;
+    border-radius: 2px solid green;
+  height: 509px; 
+  /* width: 50%; */
+  overflow: auto; 
+}
+</style>

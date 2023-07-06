@@ -3,10 +3,10 @@
     <div class="container m-3">
       <div class="card col-4 {{ project.category }}">
         <img :src="project.img" alt="" class="projImg">
-          <p class="title">{{project.projName}}</p>
+          <p class="title text-white">{{project.projName}}</p>
           <div class="card-hidden">
              
-              <p>{{ project.desc }}</p>
+              <p class="text-white">{{ project.desc }}</p>
               <a href="#" target="_blank"
             ><i class="fa-brands fa-github" id="Github"></i
           ></a>
@@ -47,7 +47,9 @@
   position: relative;
   width: 250px;
   height: 270px;
-  background-image: url(https://i.postimg.cc/NfgMyfLH/test.jpg);
+  /* background-image: url(https://i.postimg.cc/NfgMyfLH/test.jpg); */
+  /* background-color: var(--secondary-color); */
+  background: linear-gradient(#ff3c7ac8, #d8255e);
   border-radius: 8px;
   color: #232323;
   padding: 16px;

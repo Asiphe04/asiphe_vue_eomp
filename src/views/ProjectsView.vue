@@ -3,14 +3,14 @@
  <div class="container">
   <h3  class="text-start text-center">A list of projects I've done</h3>
  <h4 class="text-start m-2">PS : I'm still designing this page, please visit my GitHub for better understanding of my work or skills.</h4>
- <div class="radio-inputs m-3 justify-content-center align-items-center">
+ <div class="radio-inputs m-3 justify-content-center align-items-center ">
   <label class="radio">
     <input type="radio" name="radio" checked="">
     <span class="name">HTML,CSS</span>
   </label>
   <label class="radio">
     <input type="radio" name="radio">
-    <span class="name">JS</span>
+    <span class="name ">JS</span>
   </label>
       
   <label class="radio">
@@ -46,7 +46,7 @@
   display: flex;
   flex-wrap: wrap;
   border-radius: 0.5rem;
-  background-color: #EEE;
+  background-color: var(--secondary-color);
   box-sizing: border-box;
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
   padding: 0.25rem;
