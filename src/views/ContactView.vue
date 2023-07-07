@@ -3,7 +3,8 @@
 <div class="container d-flex">
     <div class="col-6 m-4">
         <span class="title">Leave a Message</span>
-  <form class="form">
+  <form class="form"  action="https://formspree.io/f/mzblbdga"
+  method="POST">
     <div class="group">
     <input placeholder="‎" type="text" required="">
     <label for="name">Name</label>

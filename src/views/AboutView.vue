@@ -82,7 +82,7 @@ button:hover {
   box-shadow: inset 0px 0px 25px  #d10143;
 }
 .content{
-  height: 469px;
+  height: 479px;
   padding: 5px;
   border-radius: 5%;
   border: 1px solid var(--secondary-color);
