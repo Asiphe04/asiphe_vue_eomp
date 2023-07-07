@@ -5,7 +5,7 @@
     <img src="https://i.postimg.cc/HnxfC1bg/IMG-20230420-WA0018.jpg" alt="" id="img-container">
 </div>
 <div class="col-6">
-  <p>Hover for more details</p>
+  <p class="hover-text">Hover for more details</p>
   <div class="radio-inputs m-3 justify-content-center align-items-center ">
   <label class="radio">
     <input type="radio" name="radio" checked="" v-model="activeTab" value="skills">
@@ -83,6 +83,12 @@ export default {
   box-shadow:0px 0px 10px rgba(0,0,0,.5);
 }
 @media (max-width:300px){
+  .hover-text{
+    display: none;
+  }
+  .lol{
+    display: none;
+  }
   .timeline{
     width:100%;
     padding:30px 5px 30px 10px;
@@ -98,7 +104,7 @@ export default {
   box-sizing: border-box;
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
   padding: 0.25rem;
-  width: 300px;
+  width: 250px;
   font-size: 14px;
 }
 
