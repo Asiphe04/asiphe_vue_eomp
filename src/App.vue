@@ -17,7 +17,7 @@ export default{
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
- 
+ /* min-height: 100vh; */
   text-align: center;
   color:white;
   background-color: var(--primary-color);

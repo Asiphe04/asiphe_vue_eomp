@@ -4,14 +4,14 @@
   <div class="lol col-6">
     <img src="https://i.postimg.cc/HnxfC1bg/IMG-20230420-WA0018.jpg" alt="" id="img-container">
 </div>
-<div class="col-6">
+<div class="info-container col-6">
   <p class="hover-text">Hover for more details</p>
   <div class="radio-inputs m-3 justify-content-center align-items-center ">
   <label class="radio">
     <input type="radio" name="radio" checked="" v-model="activeTab" value="skills">
     <span class="name">Skills</span>
   </label>
-  <label class="radio">
+  <label class="radio" id="experience-btn">
     <input type="radio" name="radio" v-model="activeTab" value="experience">
     <span class="name ">Experience</span>
   </label>
@@ -83,6 +83,12 @@ export default {
   box-shadow:0px 0px 10px rgba(0,0,0,.5);
 }
 @media (max-width:700px){
+#experience-btn{
+  display: none;
+}
+  .info-container{
+    width: 100% !important;
+  }
   .hover-text{
     display: none;
   }

@@ -6,7 +6,7 @@
   <h1 class="mt-5">What people say about me:</h1>
 </div>
     <div class="col-6 scrollable-div">
-      <div v-if="testimonials">
+      <div v-if="testimonials" class="yho">
         <p>*scroll here</p>
    <TestCardComp v-for="testimonial of testimonials" :key="testimonial.id" :testimonial="testimonial" />
    </div>
@@ -32,13 +32,30 @@
 </script>
 
 <style scoped>
+@media (max-width:300px){ 
+  .hey{
+display: none;
+}
+.scrollable-div{
+   
+    width: 100%;
+}
+}
+@media (max-width:700px){
+  .hey{
+display: none;
+}
+  .scrollable-div{
+    width: 100% !important;
+    overflow: hidden;
+}
+}
 .hey{ 
   /* background-image: url("https://i.postimg.cc/PJz0CT2T/TABLES.png"); */
   width: 40%;
  }
 .scrollable-div {
   width: 60%;
-    border-radius: 2px solid green;
   height: 509px; 
   /* width: 50%; */
   overflow: auto; 

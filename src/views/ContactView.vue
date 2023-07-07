@@ -1,7 +1,7 @@
 <template>
 <h1  class="m-1">Contact</h1>
 <div class="container d-flex">
-    <div class="col-6 m-4">
+    <div class="contact-form col-6 m-4">
         <span class="title">Leave a Message</span>
   <form class="form"  action="https://formspree.io/f/mzblbdga"
   method="POST">
@@ -31,6 +31,18 @@
     }
 </script>
 <style scoped>
+
+@media (max-width:700px){
+  .contact-form{
+    width: 90% !important;
+  }
+  .title{
+    display: none;
+  }
+  #contact-img{
+    display: none;
+  }
+}
 #contact-img{
   border-radius: 3%;
     height: 350px;

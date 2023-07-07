@@ -33,11 +33,32 @@
  object-fit: cover; 
 }
 .card{
+  /* width: 100%; */
  height: 455px;
   background-color: #141414;
 }
 .main{
   border-radius: 2%;
   border: 1px solid var(--secondary-color);;
+}
+@media (max-width:300px){ 
+  .card{
+    margin-top: 15px;
+    height: 350px;
+  }
+  .main{
+    height: 400px;
+  width: 250px;
+}
+.TestImg{
+  display: none;
+}
+}
+@media (max-width:700px){ 
+
+.TestImg{
+  padding-top: 20px;
+  /* display: none; */
+}
 }
 </style>

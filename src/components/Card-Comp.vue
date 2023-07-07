@@ -47,8 +47,6 @@
   position: relative;
   width: 250px;
   height: 270px;
-  /* background-image: url(https://i.postimg.cc/NfgMyfLH/test.jpg); */
-  /* background-color: var(--secondary-color); */
   background: linear-gradient(#ff3c7ac8, #d8255e);
   border-radius: 8px;
   color: #232323;
@@ -62,7 +60,6 @@
   display: flex;
   transform: translateY(200%);
   flex-direction: column;
-  /* gap: .5rem; */
   transition: transform .5s ease-in, opacity .3s ease-in;
   opacity: 0;
 }
@@ -91,8 +88,6 @@
 .card:hover .title {
   transform: translateY(200%);
 }
-
-/*Text*/
 .title {
   position: absolute;
   bottom: 1rem;
