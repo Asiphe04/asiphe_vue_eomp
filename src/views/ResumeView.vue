@@ -82,6 +82,14 @@ export default {
   padding:30px 20px;
   box-shadow:0px 0px 10px rgba(0,0,0,.5);
 }
+@media (max-width:700px){
+  .hover-text{
+    display: none;
+  }
+  .lol{
+    display: none;
+  }
+}
 @media (max-width:300px){
   .hover-text{
     display: none;
