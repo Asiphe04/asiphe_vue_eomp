@@ -1,60 +1,35 @@
 <template>
-  <h1 class="m-1">Contact</h1>
-  <div class="container d-flex">
+<h1  class="m-1">Contact</h1>
+<div class="container d-flex">
     <div class="contact-form col-6 m-4">
-      <span class="title">Leave a Message</span>
-      <form class="form" action="https://formspree.io/f/mzblbdga" method="POST" @submit="validateForm">
-        <div class="group">
-          <input placeholder="‎" type="text" v-model="name" required>
-          <label for="name">Name</label>
-        </div>
-        <div class="group">
-          <input placeholder="‎" type="email" id="email" v-model="email" required>
-          <label for="email">Email</label>
-        </div>
-        <div class="group">
-          <textarea placeholder="‎" id="comment" v-model="message" rows="5" required></textarea>
-          <label for="comment">Message</label>
-        </div>
-        <button type="submit">Send!</button>
-      </form>
+        <span class="title">Leave a Message</span>
+  <form class="form"  action="https://formspree.io/f/mzblbdga"
+  method="POST">
+    <div class="group">
+    <input placeholder="‎" type="text" required="">
+    <label for="name">Name</label>
     </div>
-    <div class="col-6 m-4" id="contact-img">
+<div class="group">
+    <input placeholder="‎" type="email" id="email" name="email" required="">
+    <label for="email">Email</label>
     </div>
-  </div>
+<div class="group">
+    <textarea placeholder="‎" id="comment" name="comment" rows="5" required=""></textarea>
+    <label for="comment">Message</label>
+</div>
+    <button type="submit">Send!</button>
+  </form> 
+    </div>
+    <div class="col-6 m-4" id="contact-img">  
+    </div>
+</div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      name: '',
-      email: '',
-      message: ''
-    };
-  },
-  methods: {
-    validateForm(event) {
-      if (!this.name || !this.email || !this.message) {
-        event.preventDefault();
-        alert('Please fill in all the required fields.');
-      } else if (!this.isValidEmail(this.email)) {
-        event.preventDefault();
-        alert('Please enter a valid email address.');
-      }
-    },
-    isValidEmail(email) {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return emailRegex.test(email);
+    export default{
+
     }
-  }
-};
 </script>
-
-<style scoped>
-/* CSS styles remain the same */
-</style>
-
 <style scoped>
 
 @media (max-width:700px){

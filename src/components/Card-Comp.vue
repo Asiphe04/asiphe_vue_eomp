@@ -7,9 +7,17 @@
           <div class="card-hidden">
              
               <p class="text-white">{{ project.desc }}</p>
-              <a :href="project.link" target="_blank"
+              <div class="d-flex align-items-center justify-content-center text-center">
+                <a :href="project.link" target="_blank"
             ><i class="fa-brands fa-github" id="Github"></i
           ></a>
+          <button class="netlify-btn" target="_blank">
+          <a :href="project.netlify" class="text-white text-decoration-none">
+            <img class="netlify-img" src="https://i.postimg.cc/ZqY70C01/icons8-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-sta.png" alt="">
+         </a>
+        </button>
+              </div>
+
           </div>
 
       </div>
@@ -26,6 +34,16 @@
 </script>
 
 <style scoped>
+.netlify-img{
+  margin: 5px !important;
+  height: 33px !important;
+  width: 33px !important;
+  font-size: xx-large !important;
+}
+.netlify-btn{
+  background: transparent;
+  border: none;
+}
 .projImg{
   height: 150px !important;
 }
