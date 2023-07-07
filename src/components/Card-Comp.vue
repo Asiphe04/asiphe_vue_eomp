@@ -11,11 +11,11 @@
                 <a :href="project.link" target="_blank"
             ><i class="fa-brands fa-github" id="Github"></i
           ></a>
-          <button class="netlify-btn" target="_blank">
-          <a :href="project.netlify" class="text-white text-decoration-none">
-            <img class="netlify-img" src="https://i.postimg.cc/ZqY70C01/icons8-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-sta.png" alt="">
+          <a :href="project.netlify" class="text-white text-decoration-none" target="_blank">
+            <button class="netlify-btn" >
+              <img class="netlify-img" src="https://i.postimg.cc/ZqY70C01/icons8-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-sta.png" alt="">
+            </button>
          </a>
-        </button>
               </div>
 
           </div>
