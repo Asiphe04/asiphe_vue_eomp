@@ -7,7 +7,7 @@
           <div class="card-hidden">
              
               <p class="text-white">{{ project.desc }}</p>
-              <a href="#" target="_blank"
+              <a :href="project.link" target="_blank"
             ><i class="fa-brands fa-github" id="Github"></i
           ></a>
           </div>
