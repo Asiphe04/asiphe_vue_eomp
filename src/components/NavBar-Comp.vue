@@ -7,9 +7,21 @@
           src="https://i.postimg.cc/7ZFBqyKL/an.png"
           alt="Logo-image"
         />
-        <div class="justify-content-center" id="navbarNav">
+        <button @click="navbarNav"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!----  <span class="navbar-toggler-icon"></span>-->
+            <i class="fas fa-bars fa-lg" style="color: #d7dce5"></i>
+          </button>
+        <div class="justify-content-center" >
           <div id="myLinks" class="d-flex">
-            <ul class="navbar-nav ml-auto collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto collapse navbar-collapse" id="navbarNav">
               <li class="nav-item active">
                 <a class="nav-link" href="/">Home</a>
               </li>
@@ -38,8 +50,15 @@
 
 <script>
 export default {
+  methods: {
+    'navbarNav': function() {
+      const navbar = document.getElementById('navbarNav');
+      navbar.classList.toggle('show');
+    }
+  }
 };
 </script>
+
 <style>
 .theme{
   margin : 0px 15px;
