@@ -5,10 +5,11 @@
       <div class="content col-6" id="img-container">
         <img src="https://i.postimg.cc/QxYF9Vrr/IMG-20220430-WA0004.jpg" alt="" id="content-img">
         <h2 id="desc" class="text-center">Front-End Developer</h2>
-        <button >
-         <img src="https://i.postimg.cc/rFv7yXwN/icons8-download-24.png" alt=""> 
-         CV
-</button>   
+        <button>
+    <a href="https://drive.google.com/file/d/1YV4iQE5YoQ7DcHBQ9Ce6L-Zs1qlpftJM/view?usp=sharing" target="_blank" class="text-white text-decoration-none">
+        <img src="https://i.postimg.cc/rFv7yXwN/icons8-download-24.png" alt="">  CV
+    </a>
+</button> 
       </div>
       <div class="content col-6 ms-2" id="content-text">
       <p class="lead-text text-start" id="second-text">I'm Asiphe Ndimlana, an energetic and dedicated frontend developer based in Cape Town</p>

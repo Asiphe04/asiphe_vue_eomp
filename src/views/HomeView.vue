@@ -8,8 +8,11 @@
   <br>
 
   <button>
-    <img src="https://i.postimg.cc/rFv7yXwN/icons8-download-24.png" alt="">  CV
+    <a href="https://drive.google.com/file/d/1YV4iQE5YoQ7DcHBQ9Ce6L-Zs1qlpftJM/view?usp=sharing" target="_blank" class="text-white text-decoration-none">
+        <img src="https://i.postimg.cc/rFv7yXwN/icons8-download-24.png" alt="">  CV
+    </a>
 </button>
+
 </template>
 
 <script>

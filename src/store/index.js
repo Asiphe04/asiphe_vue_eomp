@@ -27,24 +27,40 @@ export default createStore({
   },
   actions: {
     getProjects: async (context) => {
-      fetch("https://asiphe04.github.io/data/db.json")
-        .then((response) => response.json())
-        .then((data) => context.commit("setProjects", data.projects));
+      try {
+        const response = await fetch("https://asiphe04.github.io/data/db.json");
+        const data = await response.json();
+        context.commit("setProjects", data.projects);
+      } catch (error) {
+        alert("Failed to fetch projects");
+      }
     },
     getTestimonials: async (context) => {
-      fetch("https://asiphe04.github.io/data/db.json")
-        .then((response) => response.json())
-        .then((data) => context.commit("setTestimonials", data.testimonials));
+      try {
+        const response = await fetch("https://asiphe04.github.io/data/db.json");
+        const data = await response.json();
+        context.commit("setTestimonials", data.testimonials);
+      } catch (error) {
+        alert("Failed to fetch testimonials");
+      }
     },
     getSkills: async (context) => {
-      fetch("https://asiphe04.github.io/data/db.json")
-        .then((response) => response.json())
-        .then((data) => context.commit("setSkills", data.skills));
+      try {
+        const response = await fetch("https://asiphe04.github.io/data/db.json");
+        const data = await response.json();
+        context.commit("setSkills", data.skills);
+      } catch (error) {
+        alert("Failed to fetch skills");
+      }
     },
     getTimelines: async (context) => {
-      fetch("https://asiphe04.github.io/data/db.json")
-        .then((response) => response.json())
-        .then((data) => context.commit("setTimelines", data.education));
+      try {
+        const response = await fetch("https://asiphe04.github.io/data/db.json");
+        const data = await response.json();
+        context.commit("setTimelines", data.education);
+      } catch (error) {
+        alert("Failed to fetch education info");
+      }
     },
   },
 });
