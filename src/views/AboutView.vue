@@ -1,8 +1,100 @@
 <template>
+  <br>
   <h1 class="text-center">About me</h1>
 
-  <div class="container d-flex m-3">
-      <div class="content col-6" id="img-container">
+  <div class="container d-flex justify-content-center align-content-center text-center">
+    <div class="col-2">
+     <h3 class="text-start">Profile</h3>
+     <p class="text-start">A little info about myself</p> 
+     <!-- Information -->
+   <h5 class="text-start">Full Name: </h5>
+   <p class="text-start">Asiphe Ndimlana</p>
+   <hr class="my-1" />
+   <h5 class="text-start">DOB:</h5>
+   <p class="text-start">03 September 2004</p>
+   <hr class="my-1" />
+   <h5 class="text-start">Gender:</h5>
+   <p class="text-start">Male</p>
+   <hr class="my-1" />
+   <h5 class="text-start">Location:</h5>
+   <p class="text-start">Phillip East, Cape Town</p>
+   <hr class="my-1" />
+   <h5 class="text-start">Email:</h5>
+   <p class="text-start">asiphendimlana40@gmail.com</p>
+   <hr class="my-1" />
+   <h5 class="text-start">Willing to relocate:</h5>
+   <p class="text-start">Yes</p>
+   <hr class="my-1" />
+    </div>
+    <!-- End of information -->
+    <div class="col-6 align-items-center justify-content-center text-center">
+      <h3 class="text-center justify-content-center align-content-center align-items-center">Let me introduce myself</h3>
+      <!-- <div class="d-flex"> -->
+      <div class="img-container align-items-center justify-content-center text-center align-content-center"></div>
+      <div class="text-container text-start m-2">
+        <p>
+          I am a web developer hailing from Cape Town.               
+        My journey in coding began in 2019, during my Grade 10
+         year.               
+        Initially in High School I dabbled in Delphi 7 before
+         pivoting to focus on HTML, CSS, and Javascript after.              
+        As a developer, I adopt a formal tone of voice in my
+         professional interactions.  
+         On a more personal note, I spend my time working on my
+         numerous
+        </p>
+      <!-- </div> -->
+    </div>
+    </div>
+    <div class="col-4">
+      <h2>
+       My hobbies
+      </h2>
+        <br />
+        <br />
+        <div id="interests-container" class="container">
+          <!-- Soccer -->
+          <img
+            class="animate__animated animate__bounce animate__infinite"
+            width="60px"
+            src="https://i.postimg.cc/Bbp59qpM/soc-removebg-preview.png"
+            alt=""
+          />
+          <!-- Spotify -->
+          <img
+            class="animate__animated animate__bounce animate__infinite"
+            width="60px"
+            src="https://i.postimg.cc/VLsB9CsT/spo-removebg-preview.png"
+            alt=""
+          />
+          <!-- Netflix -->
+          <img
+            class="animate__animated animate__bounce animate__infinite"
+            width="60px"
+            src="https://i.postimg.cc/ZYxxycmp/net-removebg-preview.png"
+            alt=""
+          />
+
+          <!-- Chess -->
+          <img
+            class="animate__animated animate__bounce animate__infinite"
+            width="60px"
+            src="https://i.postimg.cc/dtWR5VL0/ch-removebg-preview.png"
+            alt=""
+          />
+        </div>
+        <!-- End of interests -->
+        <!-- Inspirators -->
+        <h1>My inspirators</h1>
+        <div class="container" id="inspirators">
+          <img src="https://i.postimg.cc/0Q0xs3wV/goat.jpg" alt=""   width="150px" class="inspirators-pic">
+          <img src="https://i.postimg.cc/cC1W4m70/elon.jpg" alt=""   width="150px" class="inspirators-pic">
+          <img src="https://i.postimg.cc/VkJYCDxN/kh.jpg" alt=""   width="150px" class="inspirators-pic">
+          <img src="https://i.postimg.cc/BvD4htQ9/jp.jpg" alt=""   width="200px" class="inspirators-pic">
+        </div>
+        <!-- End of inspirators -->
+    </div>
+      <!-- <div class="content col-6" id="img-container">
         <img src="https://i.postimg.cc/QxYF9Vrr/IMG-20220430-WA0004.jpg" alt="" id="content-img">
         <h2 id="desc" class="text-center">Front-End Developer</h2>
         <button>
@@ -10,8 +102,8 @@
         <img src="https://i.postimg.cc/rFv7yXwN/icons8-download-24.png" alt="">  CV
     </a>
 </button> 
-      </div>
-      <div class="content col-6 ms-2" id="content-text">
+      </div> -->
+      <!-- <div class="content col-6 ms-2" id="content-text">
       <p class="lead-text text-start" id="second-text">I'm Asiphe Ndimlana, an energetic and dedicated frontend developer based in Cape Town</p>
       <p class="lead-text text-start">My journey in coding began in 2019, during my Grade 10 year. Initially in High School I dabbled in Delphi 7 and 10 before pivoting to focus on HTML, CSS, Javascript and many more.</p>
       <p class="lead-text text-start"></p>
@@ -24,7 +116,8 @@
        Feel free to
       <a class="text-link text-decoration-none" href="/contact">reach out</a >
       </p>
-      </div>
+      </div> -->
+
 
    
   </div>
@@ -35,7 +128,42 @@ export default{
   
 }
 </script>
+
 <style scoped>
+.inspirators-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+}
+
+#inspirators{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px; 
+}
+#interests-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.img-container {
+  width: 200px;
+  height: 200px; 
+  border-radius: 50%;
+  background-image: url("https://i.postimg.cc/j5yJmsND/C12-Asiphe-Ndimlana-3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 button {
   width: 5em;
   position: relative;
