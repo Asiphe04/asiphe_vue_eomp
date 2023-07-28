@@ -6,7 +6,7 @@
     <div class="col-2 mt-5">
      
      <h3 class="text-start">Profile</h3>
-     <p class="text-start">A little info about myself</p> 
+     <p class="text-start" style="font-size: 17px;">A little info about myself</p> 
      <!-- Information -->
    <h5 class="text-start">Full Name: </h5>
    <p class="text-start">Asiphe Ndimlana</p>
@@ -33,13 +33,13 @@
       <h3 class="text-center justify-content-center align-content-center align-items-center">Let me introduce myself</h3>
     
         <div class="img-container align-items-center justify-content-center text-center d-flex"></div>
-      <div class="text-container text-start m-4">
-        <p style="font-size: 20px;">
+      <div class="text-container text-center m-4">
+        <p style="font-size: 20px;" class="text-start">
           I am a web developer hailing from Cape Town.               
         My journey in coding began in 2019, during my Grade 10
          year.               
         Initially in High School I dabbled in Delphi 7 before
-         pivoting to focus on HTML, CSS, and Javascript after.              
+         pivoting to focus on HTML, CSS,  Javascript and many more.              
         As a developer, I adopt a formal tone of voice in my
          professional interactions.  
          On a more personal note, I spend my time working on my
