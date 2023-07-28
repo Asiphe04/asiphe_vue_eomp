@@ -1,5 +1,9 @@
 <template>
+   <br>
+      <br>
+      
     <section >
+     
       <div class="footer-container text-center">
         <p class="text-white p-1">
           Copyright &copy; 2023 All Rights Reserved by Asiphe Ndimlana

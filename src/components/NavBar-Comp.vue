@@ -16,7 +16,6 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <!----  <span class="navbar-toggler-icon"></span>-->
             <i class="fas fa-bars fa-lg" style="color: #d7dce5"></i>
           </button>
         <div class="justify-content-center" >
@@ -46,6 +45,9 @@
       </div>
     </nav>
   </header>
+
+
+  
 </template>
 
 <script>
@@ -114,7 +116,6 @@ export default {
  #navbarNav a:hover{
   color: white;
   box-shadow: 0 5px 15px rgba( 0.5,0, 0, 0);
-    /* background-color: var(--secondary-color); */
   }
    #navbarNav a:hover::before{
     color: white;
@@ -211,3 +212,4 @@ export default {
 }
 
 </style>
+

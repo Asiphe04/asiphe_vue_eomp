@@ -1,9 +1,10 @@
 <template>
   <br>
-  <h1 class="text-center">About me</h1>
+ 
 
   <div class="container d-flex justify-content-center align-content-center text-center">
-    <div class="col-2">
+    <div class="col-2 mt-5">
+     
      <h3 class="text-start">Profile</h3>
      <p class="text-start">A little info about myself</p> 
      <!-- Information -->
@@ -27,12 +28,13 @@
    <hr class="my-1" />
     </div>
     <!-- End of information -->
-    <div class="col-6 align-items-center justify-content-center text-center">
+    <div class="col-7 align-items-center justify-content-center text-center">
+      <h1 class="text-center">About me</h1>
       <h3 class="text-center justify-content-center align-content-center align-items-center">Let me introduce myself</h3>
-      <!-- <div class="d-flex"> -->
-      <div class="img-container align-items-center justify-content-center text-center align-content-center"></div>
-      <div class="text-container text-start m-2">
-        <p>
+    
+        <div class="img-container align-items-center justify-content-center text-center d-flex"></div>
+      <div class="text-container text-start m-4">
+        <p style="font-size: 20px;">
           I am a web developer hailing from Cape Town.               
         My journey in coding began in 2019, during my Grade 10
          year.               
@@ -41,12 +43,15 @@
         As a developer, I adopt a formal tone of voice in my
          professional interactions.  
          On a more personal note, I spend my time working on my
-         numerous
+         numerous <a class="text-link text-decoration-none" href="/projects">projects</a >.
+          <br />
+       Feel free to
+      <a class="text-link text-decoration-none" href="/contact">reach out</a > if you want to talk about work or just geek out in general.
         </p>
-      <!-- </div> -->
+     
     </div>
     </div>
-    <div class="col-4">
+    <div class="col-4 mt-5">
       <h2>
        My hobbies
       </h2>
@@ -94,32 +99,7 @@
         </div>
         <!-- End of inspirators -->
     </div>
-      <!-- <div class="content col-6" id="img-container">
-        <img src="https://i.postimg.cc/QxYF9Vrr/IMG-20220430-WA0004.jpg" alt="" id="content-img">
-        <h2 id="desc" class="text-center">Front-End Developer</h2>
-        <button>
-    <a href="https://drive.google.com/file/d/1YV4iQE5YoQ7DcHBQ9Ce6L-Zs1qlpftJM/view?usp=sharing" target="_blank" class="text-white text-decoration-none">
-        <img src="https://i.postimg.cc/rFv7yXwN/icons8-download-24.png" alt="">  CV
-    </a>
-</button> 
-      </div> -->
-      <!-- <div class="content col-6 ms-2" id="content-text">
-      <p class="lead-text text-start" id="second-text">I'm Asiphe Ndimlana, an energetic and dedicated frontend developer based in Cape Town</p>
-      <p class="lead-text text-start">My journey in coding began in 2019, during my Grade 10 year. Initially in High School I dabbled in Delphi 7 and 10 before pivoting to focus on HTML, CSS, Javascript and many more.</p>
-      <p class="lead-text text-start"></p>
-      <p class="lead-text text-start" id="second-last-text">As a dev, I adopt a formal tone of voice in my professional interactions.</p>
-     
-      <p class="lead-text text-start" id="last-text"> I spend my time working on my
-      
-      <a class="text-link text-decoration-none" href="/projects">projects</a >
-       <br />
-       Feel free to
-      <a class="text-link text-decoration-none" href="/contact">reach out</a >
-      </p>
-      </div> -->
-
-
-   
+ 
   </div>
 </template>
 
@@ -157,12 +137,14 @@ export default{
 }
 .img-container {
   width: 200px;
-  height: 200px; 
+  height: 200px;
   border-radius: 50%;
   background-image: url("https://i.postimg.cc/j5yJmsND/C12-Asiphe-Ndimlana-3.jpg");
   background-size: cover;
   background-position: center;
+  margin: 0 auto; 
 }
+
 
 button {
   width: 5em;
