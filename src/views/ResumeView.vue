@@ -69,8 +69,9 @@ export default {
 
 <style scoped>
 .name{
-  color: darkgray !important;
+  color: white !important;
 }
+
 .timeline ul{
   list-style-type:none;
   border-left:2px solid var(--secondary-color);
@@ -145,6 +146,7 @@ export default {
 
 .radio-inputs .radio input:checked + .name {
   background-color: #fff;
+  color: grey !important;
   font-weight: 600;
 }
 .lol{

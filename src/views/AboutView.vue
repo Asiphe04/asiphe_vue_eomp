@@ -21,7 +21,7 @@
    <p class="text-start">Phillip East, Cape Town</p>
    <hr class="my-1" />
    <h5 class="text-start">Email:</h5>
-   <p class="text-start">asiphendimlana40@gmail.com</p>
+   <p class="text-start email">asiphendimlana40@gmail.com</p>
    <hr class="my-1" />
    <h5 class="text-start">Willing to relocate:</h5>
    <p class="text-start">Yes</p>
@@ -92,11 +92,13 @@
         <!-- Inspirators -->
         <h1>My inspirators</h1>
         <div class="container" id="inspirators">
-          <img src="https://i.postimg.cc/0Q0xs3wV/goat.jpg" alt=""   width="150px" class="inspirators-pic">
-          <img src="https://i.postimg.cc/cC1W4m70/elon.jpg" alt=""   width="150px" class="inspirators-pic">
-          <img src="https://i.postimg.cc/VkJYCDxN/kh.jpg" alt=""   width="150px" class="inspirators-pic">
-          <img src="https://i.postimg.cc/BvD4htQ9/jp.jpg" alt=""   width="200px" class="inspirators-pic">
+          <img src="https://i.postimg.cc/T3rsg4xx/messiwor.jpg" alt=""   class="inspirators-pic">
+          <img src="https://i.postimg.cc/CxL8sZTK/mosh.jpg" alt=""    class="inspirators-pic">
+          <img src="https://i.postimg.cc/VkJYCDxN/kh.jpg" alt=""    class="inspirators-pic">
+                <img src="https://i.postimg.cc/BvD4htQ9/jp.jpg" alt=""    class="inspirators-pic">
+          
         </div>
+
         <!-- End of inspirators -->
     </div>
  
@@ -110,13 +112,14 @@ export default{
 </script>
 
 <style scoped>
+.email{
+  font-size : 13px !important;
+}
 .inspirators-pic {
-  width: 120px;
-  height: 120px;
+  width: 9em;
+  height: 9em;
   border-radius: 50%;
-  background-color: #000;
-  background-size: cover;
-  background-position: center;
+ 
 }
 
 #inspirators{
