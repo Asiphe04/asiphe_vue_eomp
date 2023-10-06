@@ -7,11 +7,10 @@
 </div>
   <br>
 
-  <button>
-    <a href="https://drive.google.com/file/d/1YV4iQE5YoQ7DcHBQ9Ce6L-Zs1qlpftJM/view?usp=sharing" target="_blank" class="text-white text-decoration-none">
-        <img src="https://i.postimg.cc/rFv7yXwN/icons8-download-24.png" alt="">  CV
-    </a>
-</button>
+
+<a href="https://drive.google.com/file/d/11juEq9DjzG_qHKykgx0XDvfwXEL8YkCl/view?usp=sharing" download target="_blank">
+<button class="btn"><i  class="fa fa-download"></i>Resume</button>
+</a>
 
 </template>
 
@@ -72,53 +71,21 @@ export default {
 </script>
 
 <style scoped>
-
-button {
-  width: 10em;
-  position: relative;
-  height: 3.5em;
-  border: 3px ridge  #FF004F;
-  outline: none;
-  background-color: transparent;
+/* Style buttons */
+.btn {
+  background-color: var(--secondary-color);
+  border: none;
   color: white;
-  transition: 1s;
-  border-radius: 0.3em;
-  font-size: 16px;
-  font-weight: bold;
-  margin:14px
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
 }
 
-button::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: var(--primary-color);
-  transition: 0.5s;
-  transform-origin: center;
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
 }
 
-button::before {
-  content: "";
-  transform-origin: center;
-  position: absolute;
-  top: 80%;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: var(--primary-color);
-  transition: 0.5s;
-}
-
-button:hover::before, button:hover::after {
-  transform: scale(0)
-}
-
-button:hover {
-  box-shadow: inset 0px 0px 25px  #d10143;
-}
 
 .container{
  margin-top: 40px;

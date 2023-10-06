@@ -9,8 +9,9 @@
   <div class="radio-inputs m-3 justify-content-center align-items-center ">
   <label class="radio">
     <input type="radio" name="radio" checked="" v-model="activeTab" value="skills">
-    <span class="name">Skills</span>
+    <span class="name">Tech. Skills</span>
   </label>
+  
   <label class="radio" id="experience-btn">
     <input type="radio" name="radio" v-model="activeTab" value="experience">
     <span class="name ">Experience</span>
@@ -19,6 +20,14 @@
   <label class="radio">
     <input type="radio" name="radio" v-model="activeTab" value="education">
     <span class="name">Education</span>
+  </label>
+   <label class="radio">
+    <input type="radio" name="radio"  v-model="activeTab" value="Softskills">
+    <span class="name">Soft Skills</span>
+  </label>
+   <label class="radio">
+    <input type="radio" name="radio" v-model="activeTab" value="achievements">
+    <span class="name">Achievements</span>
   </label>
 </div>
 <div v-if="activeTab === 'skills'" class="d-flex flex-wrap">
@@ -119,7 +128,7 @@ export default {
   box-sizing: border-box;
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
   padding: 0.25rem;
-  width: 250px;
+  /* width: 360px; */
   font-size: 14px;
 }
 

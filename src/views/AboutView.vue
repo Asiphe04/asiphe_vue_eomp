@@ -14,11 +14,17 @@
    <h5 class="text-start">DOB:</h5>
    <p class="text-start">03 September 2004</p>
    <hr class="my-1" />
+   <h5 class="text-start">Languages:</h5>
+   <p class="text-start">Xhosa and English</p>
+   <hr class="my-1" />
    <h5 class="text-start">Gender:</h5>
    <p class="text-start">Male</p>
    <hr class="my-1" />
    <h5 class="text-start">Location:</h5>
    <p class="text-start">Phillip East, Cape Town</p>
+   <hr class="my-1" />
+   <h5 class="text-start">Cell Number:</h5>
+   <p class="text-start">078 114 9972</p>
    <hr class="my-1" />
    <h5 class="text-start">Email:</h5>
    <p class="text-start email">asiphendimlana40@gmail.com</p>
@@ -35,7 +41,7 @@
         <div class="img-container align-items-center justify-content-center text-center d-flex"></div>
       <div class="text-container text-center m-4">
         <p style="font-size: 20px;" class="text-start">
-          I am a web developer hailing from Cape Town.               
+          I am a developer hailing from Cape Town.               
         My journey in coding began in 2019, during my Grade 10
          year.               
         Initially in High School I dabbled in Delphi 7 before
@@ -52,11 +58,11 @@
     </div>
     </div>
     <div class="col-4 mt-5">
-      <h2>
+      <h2 class="mb-3">
        My hobbies
-      </h2>
+      </h2 >
         <br />
-        <br />
+       
         <div id="interests-container" class="container">
           <!-- Soccer -->
           <img
@@ -65,11 +71,11 @@
             src="https://i.postimg.cc/Bbp59qpM/soc-removebg-preview.png"
             alt=""
           />
-          <!-- Spotify -->
+          <!-- Coding -->
           <img
             class="animate__animated animate__bounce animate__infinite"
             width="60px"
-            src="https://i.postimg.cc/VLsB9CsT/spo-removebg-preview.png"
+            src="https://i.postimg.cc/853qZhHS/coding-removebg-preview.png"
             alt=""
           />
           <!-- Netflix -->
