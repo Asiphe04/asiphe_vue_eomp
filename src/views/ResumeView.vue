@@ -9,7 +9,7 @@
   <div class="radio-inputs m-3 justify-content-center align-items-center ">
   <label class="radio">
     <input type="radio" name="radio" checked="" v-model="activeTab" value="skills">
-    <span class="name">Tech. Skills</span>
+    <span class="name">Techn. Skills</span>
   </label>
   
   <label class="radio" id="experience-btn">
