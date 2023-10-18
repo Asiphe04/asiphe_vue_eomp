@@ -41,7 +41,9 @@
   </ul>
 </div>
 <div v-if="activeTab === 'experience'" class="experience">
-  <h1 class="text-start">None (Yet)</h1>
+  <h1 class="text-start">LC Studio</h1>
+  <h2 class="text-start">Oct 2023- Present</h2>
+  <h3 class="text-start">Currently persuing an AWS certificate</h3>
 
 </div>
 </div>
