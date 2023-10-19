@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
       <div class="justify-content-center text-center align-items-center d-flex">
         <img
-          class="logo-img"
+          class="logo-img m-1"
           src="https://i.postimg.cc/7ZFBqyKL/an.png"
           alt="Logo-image"
         />

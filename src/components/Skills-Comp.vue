@@ -3,8 +3,8 @@
     <div class="card m-2">
       <img :src="skill.img" alt="" class="img">
   <div class="textBox">
-    <p class="text head">{{skill.skillName}}</p>
-    <p class="text price">{{ skill.level }}</p>
+    <h1 class="text head">{{skill.skillName}}</h1>
+    
   </div>
 </div>
   </div>
@@ -55,7 +55,7 @@
 }
 
 .textBox > .head {
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .textBox > .price {

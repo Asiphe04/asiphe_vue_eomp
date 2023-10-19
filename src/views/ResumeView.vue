@@ -2,7 +2,7 @@
 <h1 class="m-1">My Resume</h1>
 <div class="container d-flex">
   <div class="lol col-6">
-    <img src="https://i.postimg.cc/HnxfC1bg/IMG-20230420-WA0018.jpg" alt="" id="img-container">
+    <img src="https://i.postimg.cc/Bvb6ssKp/C12-Asiphe-Ndimlana-1.jpg" alt="" id="img-container">
 </div>
 <div class="info-container col-6">
   <p class="hover-text">Hover for more details</p>
@@ -23,7 +23,7 @@
   </label>
    <label class="radio">
     <input type="radio" name="radio"  v-model="activeTab" value="Softskills">
-    <span class="name">Soft Skills</span>
+    <span class="name">Prof. Skills</span>
   </label>
    <label class="radio">
     <input type="radio" name="radio" v-model="activeTab" value="achievements">
@@ -34,19 +34,133 @@
   <SkillsComp v-for="skill of skills" :key="skill.id" :skill="skill" />
 </div>
    <div v-else-if="activeTab === 'education'" class="timeline">
-  <h2>Education</h2>
-  <p>*hover</p>
   <ul>
     <timelineComp v-for="timeline of timelines" :key="timeline.id" :timeline="timeline" />
   </ul>
 </div>
 <div v-if="activeTab === 'experience'" class="experience">
-  <h1 class="text-start">LC Studio</h1>
-  <h2 class="text-start">Oct 2023- Present</h2>
-  <h3 class="text-start">Currently persuing an AWS certificate</h3>
 
+  <div class="timeline">
+  <ul class="unlisted"> 
+      <li class="list">
+        <span>Oct 2023 - Present</span>
+        <div class="content">
+          <h4>LC Studio</h4>
+          <h3>Intern</h3>
+          <p>
+         Currently persuing an AWS certificate
+          </p>
+        </div>
+      </li> 
+</ul>
 </div>
 </div>
+<div v-if="activeTab === 'Softskills'" class="Softskills">
+  <div class="interests container">
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+           <i class="fa fa-bullhorn" aria-hidden="true"></i>
+            <h4>Public Speaking</h4>
+          </div>
+        </div>
+      
+       
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+           <i class="fa fa-question-circle" aria-hidden="true"></i>
+            <h4>Problem-solving</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+          <i class="fa fa-users" aria-hidden="true"></i>
+            <h4>Team Work</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+           <i class="fa fa-paint-brush" aria-hidden="true"></i>
+            <h4>Creativity</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+           <i class="fa fa-users" aria-hidden="true"></i>
+            <h4>Leadership</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">   
+  <i class="fa fa-cog" aria-hidden="true"></i>
+            <h4>Adaptability</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+           <i class="fa fa-tasks" aria-hidden="true"></i>
+            <h4>Work Ethic</h4>
+          </div>
+        </div>
+         <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="fa fa-comments-o" aria-hidden="true"></i>
+            <h4>Communication</h4>
+          </div>
+        </div>
+        
+      
+      </div>
+
+    </div>
+</div>
+<div v-if="activeTab === 'achievements'" class="achievements wrapper d-flex flex-wrap">
+  
+    <div class="card p-2">
+           <div class="img">
+      </div>
+      <img class="img-achive" src="https://i.postimg.cc/pry4wZkT/aws-educate-introduction-to-cloud-101.png" alt="">
+      <div class="info">
+        <h4>AWS Intro to Cloud 101</h4>
+      
+
+      </div>
+    </div>
+    <div class="card p-2">
+      <div class="img">
+      </div>
+         <img class="img-achive" src="https://i.postimg.cc/c4z3qyQW/Operating-Systems-Basics-Badge20231006-29-7ws0e0-1-page-0001.jpg" alt="" >
+     
+      <div class="info">
+        <h4>Operating Systems</h4>
+     
+        
+      </div>
+    </div>
+    <div class="card p-2">
+      
+      <img src="https://i.postimg.cc/QCbTMDXM/IMG-20230922-WA0007.jpg" alt="" class="img-achive">
+      <div class="info">
+        <h4>Full- Stack Development</h4>
+     
+        
+      </div>
+    </div>
+     <div class="card p-2">
+      
+      <img src="https://i.postimg.cc/qvPM97nd/IMG-20230928-095750.jpg" alt="" class="img-achive">
+      <div class="info">
+        <h4>Top Capstone Project (99%)</h4>
+     
+        
+      </div>
+    </div>
+    
+    
+  </div>
+  </div>
+
 </div>
 
 
@@ -79,6 +193,82 @@ export default {
 </script>
 
 <style scoped>
+.img-achive{
+  width: 100%;
+  height: 190px;
+}
+.wrapper{
+  /* width: 70%; */
+  color: white;
+  background: transparent;
+  justify-content: space-around;
+}
+.card{
+
+  color: white;
+  border: 0.1em solid 2B2A2A;
+    background-color: transparent;
+}
+
+.card:hover{
+  background-color: var(--secondary-color);
+}
+
+
+.interests{
+    padding: 30px;
+}
+.interests h4:hover{
+color: var(--secondary-color);
+}
+ .unlisted> li{
+  padding:20px 20px;
+  position:relative;
+  cursor:pointer;
+  transition:.5s;
+}
+ .unlisted> li> span{
+  display:inline-block;
+  background-color:var(--secondary-color);
+  border-radius:25px;
+  padding:2px 5px;
+  font-size:15px;
+  text-align:center;
+}
+ .unlisted> li .content h3{
+  color:var(--secondary-color);
+  font-size:17px;
+  padding-top:5px;
+}
+  .unlisted> li .content p{
+  padding:5px 0px 15px 0px;
+  font-size:15px;
+}
+ .unlisted> li:before{
+  position:absolute;
+  content:'';
+  width:10px;
+  height:10px;
+  background-color:#34ace0;
+  border-radius:50%;
+  left:-11px;
+  top:28px;
+  transition:.5s;
+}
+  .unlisted>li:hover{
+  background-color:#ff83aa;
+} ul li:hover:before{
+  background-color:#0F0;
+  box-shadow:0px 0px 10px 2px #0F0;
+}
+@media (max-width:300px){
+  .unlisted>li .content h3{
+    color:#34ace0;
+    font-size:15px;
+  }
+
+}
+
 .name{
   color: white !important;
 }
@@ -161,16 +351,12 @@ export default {
   font-weight: 600;
 }
 .lol{
-  margin-bottom: 15px;
-  height: 486px;
   border-radius: 5%;
-  background-repeat: no-repeat;
 }
 #img-container{
-  margin-bottom: 15px;
-  height: 486px;
-  background-image: url("https://i.postimg.cc/HnxfC1bg/IMG-20230420-WA0018.jpg");
+  width: 90%;
+  height: 500px;
  border-radius: 5%;
-  background-repeat: no-repeat;
+object-fit: cover;
 }
 </style>

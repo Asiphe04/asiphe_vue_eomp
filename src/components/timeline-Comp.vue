@@ -1,19 +1,19 @@
 <template>
     <div :to="{name: 'timelines', params: {id: timeline.id}}">  
-      <!-- <div class="timeline"> -->
-    <!-- <ul> -->
+   
       <li>
         <span>{{ timeline.period }}</span>
         <div class="content">
+          <h4>{{timeline.place}}</h4>
           <h3>{{ timeline.course }}</h3>
           <p>
           {{timeline.desc}}
           </p>
         </div>
       </li>
-    <!-- </ul> -->
+   
   </div>
-    <!-- </div> -->
+   
 
   </template>
   <script>

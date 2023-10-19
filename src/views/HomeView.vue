@@ -3,7 +3,7 @@
   </div>
   <h1>Hi, I am Asiphe Ndimlana</h1> 
   <div class="d-flex justify-content-center">
-  <h3  id="word" ref="wordRef">[ I AM A </h3> <h3> ]</h3>
+  <h3  id="word" ref="wordRef">[ I am a </h3> <h3> ]</h3>
 </div>
   <br>
 
