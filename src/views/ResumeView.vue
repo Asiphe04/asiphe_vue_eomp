@@ -116,7 +116,16 @@
     </div>
 </div>
 <div v-if="activeTab === 'achievements'" class="achievements wrapper d-flex flex-wrap">
-  
+    <div class="card p-2">
+           <div class="img">
+      </div>
+      <img class="img-achive" src="https://i.postimg.cc/Bb2KWXSL/Networking-Basics-Badge20231020-29-hvhdj7.png" alt="">
+      <div class="info">
+        <h4>Networking Basics</h4>
+      
+
+      </div>
+    </div>
     <div class="card p-2">
            <div class="img">
       </div>

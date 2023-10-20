@@ -39,23 +39,7 @@
       <!-- <h3 class="text-center justify-content-center align-content-center align-items-center">Let me introduce myself</h3> -->
     
         <div class="img-container align-items-center justify-content-center text-center d-flex"></div>
-      <!-- <div class="text-container text-center m-4">
-        <p style="font-size: 20px;" class="text-start">
-          I am a developer hailing from Cape Town.               
-        My journey in coding began in 2019, during my Grade 10
-         year.               
-        Initially in High School I dabbled in Delphi 7 before
-         pivoting to focus on HTML, CSS,  Javascript and many more.              
-        As a developer, I adopt a formal tone of voice in my
-         professional interactions.  
-         On a more personal note, I spend my time working on my
-         numerous <a class="text-link text-decoration-none" href="/projects">projects</a >.
-          <br />
-       Feel free to
-      <a class="text-link text-decoration-none" href="/contact">reach out</a > if you want to talk about work or just geek out in general.
-        </p>
-     
-    </div> -->
+   
     <div class="text-container text-center m-4">
     <p style="font-size: 20px;" class="text-start">
         I am a developer hailing from Cape Town. My journey in coding began in 2019, during my Grade 10 year. Initially in High School, I dabbled in Delphi 7 before pivoting to focus on HTML, CSS, JavaScript, and many more.
@@ -111,10 +95,10 @@
         <!-- Inspirators -->
         <h1>My inspirators</h1>
         <div class="container" id="inspirators">
-          <img src="https://i.postimg.cc/T3rsg4xx/messiwor.jpg" alt=""   class="inspirators-pic">
-          <img src="https://i.postimg.cc/CxL8sZTK/mosh.jpg" alt=""    class="inspirators-pic">
-          <img src="https://i.postimg.cc/VkJYCDxN/kh.jpg" alt=""    class="inspirators-pic">
-                <img src="https://i.postimg.cc/BvD4htQ9/jp.jpg" alt=""    class="inspirators-pic">
+          <img src="https://i.postimg.cc/QMmrJnCK/phir-removebg-preview-removebg-preview.png" alt="Messi"   class="inspirators-pic">
+          <img src="https://i.postimg.cc/W1kJf0c7/mosh-removebg-preview.png" alt="Mosh"    class="inspirators-pic">
+          <img src="https://i.postimg.cc/mkC05dVs/steve-jobs-removebg-preview.png" alt="Steve Jobs"    class="inspirators-pic">
+                <img src="https://i.postimg.cc/sgXTB6Sg/jp-removebg-preview.png" alt="Jordan Peterson"    class="inspirators-pic">
           
         </div>
 
@@ -140,7 +124,7 @@ export default{
 .inspirators-pic {
   width: 9em;
   height: 9em;
-  border-radius: 50%;
+  border-radius: 3.9em;
  
 }
 

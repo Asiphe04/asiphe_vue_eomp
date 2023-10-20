@@ -1,9 +1,9 @@
 <template>
  <h1  class="m-1">My projects</h1>
  <div class="container">
-  <h3  class="text-start text-center">A list of projects I've done</h3>
+  <h3  class="text-start text-center">Some of projects I've done</h3>
 <p>Hover for more details</p>
-  <div class="radio-inputs m-3 justify-content-center align-items-center text-center">
+  <!-- <div class="radio-inputs m-3 justify-content-center align-items-center text-center">
  
   <label class="radio" id="experience-btn">
     <input type="radio" name="radio" v-model="activeTab" value="htmlCss">
@@ -22,7 +22,7 @@
     <input type="radio" name="radio" v-model="activeTab" value="Nuxt">
     <span class="name">Nuxt</span>
   </label>
-</div>
+</div> -->
 </div>
    <div v-if="projects" class="products_container row row-cols-4 m-0">
    <CardComp v-for="project of projects" :key="project.id" :project="project" />

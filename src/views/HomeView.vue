@@ -8,7 +8,7 @@
   <br>
 
 
-<a href="https://drive.google.com/file/d/11juEq9DjzG_qHKykgx0XDvfwXEL8YkCl/view?usp=sharing" download target="_blank">
+<a href="https://drive.google.com/file/d/1LG1mOIAqPsvI8WVCyiNZwQB0cIjk9sgy/view?usp=share_link" download target="_blank">
 <button class="btn"><i  class="fa fa-download"></i>Resume</button>
 </a>
 
