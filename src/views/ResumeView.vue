@@ -2,7 +2,7 @@
 <h1 class="m-1">My Resume</h1>
 <div class="container d-flex">
   <div class="lol col-6">
-    <img src="https://i.postimg.cc/Bvb6ssKp/C12-Asiphe-Ndimlana-1.jpg" alt="" id="img-container">
+    <img src="https://i.postimg.cc/W3msBrC9/resune-removebg-preview.png" alt="" id="img-container">
 </div>
 <div class="info-container col-6">
   <p class="hover-text">Hover for more details</p>

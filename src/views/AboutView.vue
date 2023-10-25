@@ -122,8 +122,8 @@ export default{
   font-size : 13px !important;
 }
 .inspirators-pic {
-  width: 9em;
-  height: 9em;
+  width: 7em;
+  height: 7em;
   border-radius: 3.9em;
  
 }
