@@ -76,7 +76,7 @@ export default {
 <style scoped>
 /* Style buttons */
 .btn {
-  background-color: var(--secondary-color);
+  background-color: #2B2A2A;
   border: none;
   color: white;
   padding: 12px 30px;
@@ -86,7 +86,7 @@ export default {
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: RoyalBlue;
+  background-color: var(--secondary-color);
 }
 
 

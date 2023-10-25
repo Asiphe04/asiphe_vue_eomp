@@ -5,8 +5,8 @@
   <div class="container d-flex justify-content-center align-content-center text-center">
     <div class="col-2 mt-5">
      
-     <h3 class="text-start">Profile</h3>
-     <p class="text-start sec-title" style="font-size: 17px;">A little info about myself:</p> 
+     <h3 class="text-start">PROFILE</h3>
+      <hr class="my-1" />
      <!-- Information -->
    <h5 class="text-start">Full Name: </h5>
    <p class="text-start">Asiphe Ndimlana</p>
@@ -92,17 +92,29 @@
           />
         </div>
         <!-- End of interests -->
-        <!-- Inspirators -->
-        <h1>My inspirators</h1>
-        <div class="container" id="inspirators">
-          <img src="https://i.postimg.cc/QMmrJnCK/phir-removebg-preview-removebg-preview.png" alt="Messi"   class="inspirators-pic">
-          <img src="https://i.postimg.cc/W1kJf0c7/mosh-removebg-preview.png" alt="Mosh"    class="inspirators-pic">
-          <img src="https://i.postimg.cc/mkC05dVs/steve-jobs-removebg-preview.png" alt="Steve Jobs"    class="inspirators-pic">
-                <img src="https://i.postimg.cc/sgXTB6Sg/jp-removebg-preview.png" alt="Jordan Peterson"    class="inspirators-pic">
-          
-        </div>
+<!-- Inspirators -->
+<h1>My inspirators</h1>
+<p>*hover</p>
+<div class="container" id="inspirators">
+  <div class="inspirator">
+    <img src="https://i.postimg.cc/QMmrJnCK/phir-removebg-preview-removebg-preview.png" alt="Phindile " class="inspirators-pic">
+    <span class="name">Phindile</span>
+  </div>
+  <div class="inspirator">
+    <img src="https://i.postimg.cc/W1kJf0c7/mosh-removebg-preview.png" alt="Mosh" class="inspirators-pic">
+    <span class="name">Mosh</span>
+  </div>
+  <div class="inspirator">
+    <img src="https://i.postimg.cc/mkC05dVs/steve-jobs-removebg-preview.png" alt="Steve Jobs" class="inspirators-pic">
+    <span class="name">Steve Jobs</span>
+  </div>
+  <div class="inspirator">
+    <img src="https://i.postimg.cc/sgXTB6Sg/jp-removebg-preview.png" alt="Jordan Peterson" class="inspirators-pic">
+    <span class="name">Jordan Peterson</span>
+  </div>
+</div>
+<!-- End of inspirators -->
 
-        <!-- End of inspirators -->
     </div>
  
   </div>
@@ -115,6 +127,24 @@ export default{
 </script>
 
 <style scoped>
+.inspirator:hover .name {
+  display: block;
+}
+.inspirator {
+  position: relative;
+  display: inline-block;
+}
+.name {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
 .sec-title{
   color: #d10143;
 }
@@ -255,12 +285,7 @@ button{
 .container{
   margin: 0px !important;
 }
-/* #second-text{
-  display: none;
-} */
-/* #second-last-text{
-  display: none;
-} */
+
 #last-text{
   display: none;
 }

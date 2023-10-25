@@ -39,6 +39,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="/contact">Contact</a>
               </li>
+              <li>
+              <button>
+                <i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -62,6 +67,10 @@ export default {
 </script>
 
 <style>
+button{
+  background: transparent;
+  border: none;
+}
 .theme{
   margin : 0px 15px;
 }
