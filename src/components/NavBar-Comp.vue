@@ -1,7 +1,7 @@
 <template>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
-      <div class="justify-content-center text-center align-items-center d-flex">
+  <header >
+    <nav  class="navbar navbar-expand-lg navbar-light justify-content-center" >
+      <div  class="justify-content-center text-center align-items-center d-flex">
         <img
           class="logo-img m-1"
           src="https://i.postimg.cc/7ZFBqyKL/an.png"
@@ -40,9 +40,10 @@
                 <a class="nav-link" href="/contact">Contact</a>
               </li>
               <li>
-              <button>
-                <i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i>
-                </button>
+            <button class="mode" id="mode-toggle">
+  <i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i>
+</button>
+
               </li>
             </ul>
           </div>
@@ -58,15 +59,50 @@
 <script>
 export default {
   methods: {
-    'navbarNav': function() {
+    navbarNav: function() {
       const navbar = document.getElementById('navbarNav');
       navbar.classList.toggle('show');
     }
+  },
+  created() {
+    document.addEventListener("DOMContentLoaded", () => {
+      const modeToggle = document.getElementById("mode-toggle");
+      const app = document.getElementById("app");
+
+    
+      const storedMode = localStorage.getItem("mode");
+      if (storedMode === "dark") {
+        app.classList.add("dark-mode");
+      }
+      
+
+      modeToggle.addEventListener("click", () => {
+        if (app.classList.contains("dark-mode")) {
+          app.classList.remove("dark-mode");
+    
+          localStorage.setItem("mode", "light");
+        } else {
+          app.classList.add("dark-mode");
+       
+          localStorage.setItem("mode", "dark");
+        }
+      });
+    });
   }
+
 };
 </script>
 
+
+
+
+
 <style>
+
+
+.mode{
+  color: white;
+}
 button{
   background: transparent;
   border: none;

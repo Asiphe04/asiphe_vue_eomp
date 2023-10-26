@@ -2,7 +2,7 @@
 <h1 class="m-1">My Resume</h1>
 <div class="container d-flex">
   <div class="lol col-6">
-    <img src="https://i.postimg.cc/W3msBrC9/resune-removebg-preview.png" alt="" id="img-container">
+    <img src="https://i.postimg.cc/HsszXLvy/an-logo-letter-monogram-slash-with-modern-logo-designs-template-vector-removebg-preview-1.png" alt="" id="img-container">
 </div>
 <div class="info-container col-6">
   <p class="hover-text">Hover for more details</p>
@@ -202,6 +202,9 @@ export default {
 </script>
 
 <style scoped>
+/* #img-container.dark-mode{
+  background-image: url('https://i.postimg.cc/WzVpDC22/634455157d2e665d824a49064524b49a-removebg-preview.png');
+} */
 .img-achive{
   width: 100%;
   height: 190px;
@@ -362,10 +365,12 @@ color: var(--secondary-color);
 .lol{
   border-radius: 5%;
 }
-#img-container{
-  width: 90%;
-  height: 500px;
- border-radius: 5%;
-object-fit: cover;
+
+#img-container {
+  width: 450px; 
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
 }
+
 </style>
