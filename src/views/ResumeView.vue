@@ -212,14 +212,14 @@ export default {
 .wrapper{
   /* width: 70%; */
   color: white;
-  background: transparent;
+background: transparent;
   justify-content: space-around;
 }
 .card{
 
   color: white;
   border: 0.1em solid 2B2A2A;
-    background-color: transparent;
+   background: var(--primary-color);
 }
 
 .card:hover{
@@ -293,6 +293,7 @@ color: var(--secondary-color);
 .timeline{
   width:500px;
   color:#fff;
+  background-color: var(--primary-color);
   padding:30px 20px;
   box-shadow:0px 0px 10px rgba(0,0,0,.5);
 }
