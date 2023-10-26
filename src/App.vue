@@ -21,15 +21,10 @@ export default{
     background-color: var(--primary-color);
   }
 
-   /* rgb(226, 225, 225) */
-
-  /* Dark mode styles */
   #app.dark-mode {
     background-color: white; 
     color:#121212;            
   }
-
-
 
   :root {
     --primary-color: #121212;

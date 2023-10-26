@@ -61,7 +61,7 @@
       <div class="row">
         <div class="col-lg-3 col-md-4">
           <div class="icon-box">
-           <i class="fa fa-bullhorn" aria-hidden="true"></i>
+           <i class="fa fa-bullhorn fa-3x" aria-hidden="true"></i>
             <h4>Public Speaking</h4>
           </div>
         </div>
@@ -69,43 +69,43 @@
        
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
-           <i class="fa fa-question-circle" aria-hidden="true"></i>
+           <i class="fa fa-question-circle fa-3x" aria-hidden="true"></i>
             <h4>Problem-solving</h4>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
-          <i class="fa fa-users" aria-hidden="true"></i>
+          <i class="fa fa-users fa-3x" aria-hidden="true"></i>
             <h4>Team Work</h4>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
           <div class="icon-box">
-           <i class="fa fa-paint-brush" aria-hidden="true"></i>
+           <i class="fa fa-paint-brush fa-3x" aria-hidden="true"></i>
             <h4>Creativity</h4>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-           <i class="fa fa-users" aria-hidden="true"></i>
+           <i class="fa fa-users fa-3x" aria-hidden="true"></i>
             <h4>Leadership</h4>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">   
-  <i class="fa fa-cog" aria-hidden="true"></i>
+  <i class="fa fa-cog fa-3x" aria-hidden="true"></i>
             <h4>Adaptability</h4>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-           <i class="fa fa-tasks" aria-hidden="true"></i>
+           <i class="fa fa-tasks fa-3x" aria-hidden="true"></i>
             <h4>Work Ethic</h4>
           </div>
         </div>
          <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="fa fa-comments-o" aria-hidden="true"></i>
+            <i class="fa fa-comments-o fa-3x" aria-hidden="true"></i>
             <h4>Communication</h4>
           </div>
         </div>

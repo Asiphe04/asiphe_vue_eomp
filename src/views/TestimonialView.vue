@@ -1,12 +1,12 @@
 <template>
 <h1  class="m-1">My testimonial</h1>
 
-<div class="container d-flex">
-<div class="hey col-6 ">
-  <h1 class="mt-5">What people say about me:</h1>
-</div>
-    <div class="col-6 scrollable-div">
-      <div v-if="testimonials" class="yho">
+<div class="container d-flex  align-items-center">
+  <div class="hey col-6 align-items-center justify-content-center text-center">
+    <h1 class="mt-5">What people say about me:</h1>
+  </div>
+  <div class="col-6 scrollable-div">
+    <div v-if="testimonials" class="yho">
         <p>*scroll here</p>
    <TestCardComp v-for="testimonial of testimonials" :key="testimonial.id" :testimonial="testimonial" />
    </div>

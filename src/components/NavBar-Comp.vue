@@ -100,6 +100,7 @@ export default {
 <style>
 
 
+
 .mode{
   color: white;
 }
