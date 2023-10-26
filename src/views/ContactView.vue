@@ -75,9 +75,9 @@
   font-size: 14px;
   color: white;
   position: absolute;
-  top: -10px;
+  top: -20px;
   left: 10px;
-  background-color: #fff;
+  /* background-color: yellow; */
   transition: all .3s ease;
 }
 
@@ -89,7 +89,8 @@
   margin-bottom: 20px;
   outline: 0;
   width: 100%;
-  background-color: transparent;
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
 }
 
 .form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
