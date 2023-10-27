@@ -185,33 +185,7 @@ button {
   margin:14px
 }
 
-button::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: var(--primary-color);
-  transition: 0.5s;
-  transform-origin: center;
-}
 
-button::before {
-  content: "";
-  transform-origin: center;
-  position: absolute;
-  top: 80%;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: var(--primary-color);
-  transition: 0.5s;
-}
-
-button:hover::before, button:hover::after {
-  transform: scale(0)
-}
 
 button:hover {
   box-shadow: inset 0px 0px 25px  #d10143;

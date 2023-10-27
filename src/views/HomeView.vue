@@ -1,5 +1,5 @@
 <template>
-<div class="container"> 
+<div class="container blur-animation"> 
   </div>
   <h1>Hi, I am Asiphe Ndimlana</h1> 
   <div class="d-flex justify-content-center">
@@ -74,7 +74,30 @@ export default {
 </script>
 
 <style scoped>
-/* Style buttons */
+
+.container {
+  transition: filter 0.5s; 
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(10px);
+  }
+
+  50% {
+    filter: blur(5px);
+  }
+
+  100% {
+    filter: blur(0);
+  }
+}
+
+
+.blur-animation {
+  animation: blur 1s forwards;
+}
+
 .btn {
   background-color: #2B2A2A;
   border: none;

@@ -36,10 +36,11 @@
 .card{
   /* width: 100%; */
  height: 455px;
-  background-color: #141414;
+  background-color: #313131;
 }
 .main{
   border-radius: 2%;
+   background-color: #313131;
   border: 1px solid var(--secondary-color);;
 }
 @media (max-width:300px){ 

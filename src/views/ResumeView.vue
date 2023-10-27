@@ -115,8 +115,8 @@
 
     </div>
 </div>
-<div v-if="activeTab === 'achievements'" class="achievements wrapper d-flex flex-wrap">
-    <div class="card p-2">
+<div v-if="activeTab === 'achievements'" class="achievements wrapper d-flex flex-wrap ">
+    <div class="card p-2 m-2">
            <div class="img">
       </div>
       <img class="img-achive" src="https://i.postimg.cc/Bb2KWXSL/Networking-Basics-Badge20231020-29-hvhdj7.png" alt="">
@@ -126,7 +126,7 @@
 
       </div>
     </div>
-    <div class="card p-2">
+    <div class="card p-2 m-2">
            <div class="img">
       </div>
       <img class="img-achive" src="https://i.postimg.cc/pry4wZkT/aws-educate-introduction-to-cloud-101.png" alt="">
@@ -136,7 +136,7 @@
 
       </div>
     </div>
-    <div class="card p-2">
+    <div class="card p-2 m-2">
       <div class="img">
       </div>
          <img class="img-achive" src="https://i.postimg.cc/c4z3qyQW/Operating-Systems-Basics-Badge20231006-29-7ws0e0-1-page-0001.jpg" alt="" >
@@ -147,7 +147,7 @@
         
       </div>
     </div>
-    <div class="card p-2">
+    <div class="card p-2 m-2">
       
       <img src="https://i.postimg.cc/QCbTMDXM/IMG-20230922-WA0007.jpg" alt="" class="img-achive">
       <div class="info">
@@ -156,7 +156,7 @@
         
       </div>
     </div>
-     <div class="card p-2">
+     <div class="card p-2 m-2">
       
       <img src="https://i.postimg.cc/qvPM97nd/IMG-20230928-095750.jpg" alt="" class="img-achive">
       <div class="info">
@@ -219,7 +219,7 @@ background: transparent;
 
   color: white;
   border: 0.1em solid 2B2A2A;
-   background: var(--primary-color);
+   background: #313131;
 }
 
 .card:hover{
@@ -293,7 +293,7 @@ color: var(--secondary-color);
 .timeline{
   width:500px;
   color:#fff;
-  background-color: var(--primary-color);
+  background-color:#313131;
   padding:30px 20px;
   box-shadow:0px 0px 10px rgba(0,0,0,.5);
 }
