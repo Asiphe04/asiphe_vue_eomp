@@ -48,7 +48,7 @@
           <h4>LC Studio</h4>
           <h3>Intern</h3>
           <p>
-         Currently persuing an AWS certificate
+         Currently persuing an AWS Cloud certificate
           </p>
         </div>
       </li> 
