@@ -3,22 +3,39 @@
 <div class="container d-flex">
     <div class="contact-form col-6 m-4">
         <span class="title">Leave a Message</span>
-  <form class="form"  action="https://formspree.io/f/mzblbdga"
-  method="POST">
-    <div class="group">
-    <input placeholder="‎" type="text" required="">
-    <label for="name">Name</label>
-    </div>
-<div class="group">
-    <input placeholder="‎" type="email" id="email" name="email" required="">
-    <label for="email">Email</label>
-    </div>
-<div class="group">
-    <textarea placeholder="‎" id="comment" name="comment" rows="5" required=""></textarea>
-    <label for="comment">Message</label>
-</div>
-    <button type="submit">Send!</button>
-  </form> 
+       <form
+        class="form"
+        action="https://formspree.io/f/mzblbdga"
+        method="POST"
+        @submit.prevent="submitForm"
+      >
+        <div class="group">
+          <input placeholder="‎" type="text" v-model="formData.name" />
+          <label for="name">Name</label>
+        </div>
+        <div class="group">
+          <input
+            placeholder="‎"
+            type="email"
+            id="email"
+            name="email"
+            v-model="formData.email"
+          />
+          <label for="email">Email</label>
+        </div>
+        <div class="group">
+          <textarea
+            placeholder="‎"
+            id="comment"
+            name="comment"
+            rows="5"
+            v-model="formData.comment"
+          ></textarea>
+          <label for="comment">Message</label>
+        </div>
+        <button type="submit">Send!</button>
+       
+      </form>
     </div>
     <div class="col-6 m-4" id="contact-img">  
     </div>
@@ -26,9 +43,47 @@
 </template>
 
 <script>
-    export default{
+import Swal from "sweetalert2";
+export default {
+  data() {
+    return {
+      formData: {
+        name: "",
+        email: "",
+        comment: "",
+      },
+    };
+  },
+  methods: {
+    async submitForm() {
+  
+      if (
+        !this.formData.name ||
+        !this.formData.email ||
+        !this.formData.comment
+      ) {
+        await Swal.fire({
+          icon: "error",
+          title: "Error",
+          color: "white",
+          background: "#FF004F",
+          text: "Please fill in all fields",
+        });
+        return;
+      }
 
-    }
+     
+      await Swal.fire({
+        icon: "success",
+        title: "Success",
+        text: "Form submitted successfully!",
+        confirmButtonText: "OK",
+        background: "#FF004F",
+        color: "white",
+      });
+    },
+  },
+};
 </script>
 <style scoped>
 
