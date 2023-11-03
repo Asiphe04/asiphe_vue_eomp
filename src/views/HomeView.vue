@@ -75,6 +75,7 @@ export default {
 
 <style scoped>
 
+
 .container {
   transition: filter 0.5s; 
 }

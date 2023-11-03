@@ -1,38 +1,124 @@
 <template>
-  <br>
- 
-
+<br>
   <div class="container d-flex justify-content-center align-content-center text-center">
-    <div class="col-2 mt-5">
-     
-     <h3 class="text-start">PROFILE</h3>
-      <hr class="my-1" />
-     <!-- Information -->
-   <h5 class="text-start">Full Name: </h5>
-   <p class="text-start">Asiphe Ndimlana</p>
-   <hr class="my-1" />
-   <h5 class="text-start">DOB:</h5>
-   <p class="text-start">03/09/2004</p>
-   <hr class="my-1" />
-   <h5 class="text-start">Languages:</h5>
-   <p class="text-start">Xhosa and English</p>
-   <hr class="my-1" />
-   <h5 class="text-start">Gender:</h5>
-   <p class="text-start">Male</p>
-   <hr class="my-1" />
-   <h5 class="text-start">Location:</h5>
-   <p class="text-start">Phillip East, Cape Town</p>
-   <hr class="my-1" />
-   <h5 class="text-start">Cell Number:</h5>
-   <p class="text-start">078 114 9972</p>
-   <hr class="my-1" />
-   <h5 class="text-start">Email:</h5>
-   <p class="text-start email">asiphendimlana40@gmail.com</p>
-   <hr class="my-1" />
-   <h5 class="text-start">Willing to relocate:</h5>
-   <p class="text-start">Yes</p>
-   <hr class="my-1" />
+  <div class="d-none d-md-block col-2 mt-5">
+    <h3 class="text-start">PROFILE</h3>
+    <hr class="my-1" />
+    <!-- Information -->
+    <h5 class="text-start">Full Name: </h5>
+    <p class="text-start">Asiphe Ndimlana</p>
+    <hr class="my-1" />
+    <h5 class="text-start">DOB:</h5>
+    <p class="text-start">03/09/2004</p>
+    <hr class="my-1" />
+    <h5 class="text-start">Languages:</h5>
+    <p class="text-start">Xhosa and English</p>
+    <hr class="my-1" />
+    <h5 class="text-start">Gender:</h5>
+    <p class="text-start">Male</p>
+    <hr class="my-1" />
+    <h5 class="text-start">Location:</h5>
+    <p class="text-start">Phillip East, Cape Town</p>
+    <hr class="my-1" />
+    <h5 class="text-start">Cell Number:</h5>
+    <p class="text-start">078 114 9972</p>
+    <hr class="my-1" />
+    <h5 class="text-start">Email:</h5>
+    <p class="text-start email">asiphendimlana40@gmail.com</p>
+    <hr class="my-1" />
+    <h5 class="text-start">Willing to relocate:</h5>
+    <p class="text-start">Yes</p>
+    <hr class="my-1" />
+</div>
+
+<div class="d-md-none col-12 mt-5">
+    <h3 class="text-start">PROFILE</h3>
+    <hr class="my-1" />
+    <div class="row">
+        <div class="col-6 col-md-4">
+            <h5 class="text-start">Full Name: </h5>
+        </div>
+        <div class="col-6 col-md-8">
+            <p class="text-start">Asiphe Ndimlana</p>
+        </div>
     </div>
+    <hr class="my-1" />
+     
+    <div class="row">
+        <div class="col-6 col-md-4">
+            <h5 class="text-start">DOB: </h5>
+        </div>
+        <div class="col-6 col-md-8">
+            <p class="text-start">03/09/2004</p>
+        </div>
+    </div>
+    <hr class="my-1" />
+     <div class="row">
+        <div class="col-6 col-md-4">
+          <h5 class="text-start">Languages:</h5>
+        </div>
+        <div class="col-6 col-md-8">
+           <p class="text-start">Xhosa and English</p>
+        </div>
+    </div>
+    <hr class="my-1" />
+     <div class="row">
+        <div class="col-6 col-md-4">
+          <h5 class="text-start">Gender:</h5>
+        </div>
+        <div class="col-6 col-md-8">
+          <p class="text-start">Male</p>
+        </div>
+    </div>
+    <hr class="my-1" />
+     <div class="row">
+        <div class="col-6 col-md-4">
+          <h5 class="text-start">Location:</h5>
+        </div>
+        <div class="col-6 col-md-8">
+          <p class="text-start">Phillip East, Cape Town</p>
+        </div>
+    </div>
+    <hr class="my-1" />
+     <div class="row">
+        <div class="col-6 col-md-4">
+            <h5 class="text-start">Full Name: </h5>
+        </div>
+        <div class="col-6 col-md-8">
+            <p class="text-start">Asiphe Ndimlana</p>
+        </div>
+    </div>
+    <hr class="my-1" />
+    <div class="row">
+        <div class="col-6 col-md-4">
+            <h5 class="text-start">Cell Number:</h5>
+        </div>
+        <div class="col-6 col-md-8">
+            <p class="text-start">078 114 9972</p>
+        </div>
+    </div>
+    <hr class="my-1" />
+    <div class="row">
+        <div class="col-6 col-md-4">
+           <h5 class="text-start">Email: </h5>
+           <p>asiphendimlana40@gmail.com</p>
+        </div>
+        
+    </div>
+     <hr class="my-1" />
+    <div class="row">
+        <div class="col-6 col-md-4">
+           <h5 class="text-start">Willing to relocate:</h5>
+        </div>
+        <div class="col-6 col-md-8">
+       <p class="text-start">Yes</p>
+        </div>
+    </div>
+     <hr class="my-1" />
+    
+</div>
+
+    
     <!-- End of information -->
     <div class="col-7 align-items-center justify-content-center text-center">
       <h1 class="text-center">About me</h1>
@@ -185,52 +271,6 @@ export default{
 }
 
 
-button {
-  width: 5em;
-  position: relative;
-  height: 2.5em;
-  border: 3px ridge  #FF004F;
-  outline: none;
-  background-color: transparent;
-  color: white;
-  transition: 1s;
-  border-radius: 0.3em;
-  font-size: 16px;
-  font-weight: bold;
-  margin:14px
-}
-
-button::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: var(--primary-color);
-  transition: 0.5s;
-  transform-origin: center;
-}
-
-button::before {
-  content: "";
-  transform-origin: center;
-  position: absolute;
-  top: 80%;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: var(--primary-color);
-  transition: 0.5s;
-}
-
-button:hover::before, button:hover::after {
-  transform: scale(0)
-}
-
-button:hover {
-  box-shadow: inset 0px 0px 25px  #d10143;
-}
 .content{
   height: 479px;
   padding: 5px;
