@@ -14,13 +14,20 @@ export default{
 }
 </script>
 <style>
+
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap');
+ 
   #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+font-family: 'Noto Sans Hebrew', sans-serif;
     text-align: center;
     color: white;
     background-color: var(--primary-color);
   }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans', sans-serif;
 
+}
   #app.dark-mode {
     background-color: rgba(255, 255, 255, 0.771); 
     color:#121212;            
