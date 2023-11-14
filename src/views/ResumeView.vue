@@ -119,6 +119,16 @@
     <div class="card p-2 m-2">
            <div class="img">
       </div>
+      <img class="img-achive" src="https://i.postimg.cc/FRG9Px04/Introduction-to-Cybersecurity-Badge20231114-45-5d48m4.png" alt="">
+      <div class="info">
+        <h4>Intro to Cybersecurity</h4>
+      
+
+      </div>
+    </div>
+    <div class="card p-2 m-2">
+           <div class="img">
+      </div>
       <img class="img-achive" src="https://i.postimg.cc/Bb2KWXSL/Networking-Basics-Badge20231020-29-hvhdj7.png" alt="">
       <div class="info">
         <h4>Networking Basics</h4>
