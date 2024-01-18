@@ -4,7 +4,7 @@
       <div  class="justify-content-center text-center align-items-center d-flex">
         <img
           class="logo-img m-1"
-          src="https://i.postimg.cc/7ZFBqyKL/an.png"
+          src="https://i.postimg.cc/Hxz8NR6k/an-logo-letter-monogram-slash-with-modern-logo-designs-template-vector.jpg"
           alt="Logo-image"
         />
         <button @click="navbarNav"
@@ -112,7 +112,7 @@ button{
   margin : 0px 15px;
 }
   .logo-img{
-   
+   border-radius: 50%;
     width: 3rem;
   
   }

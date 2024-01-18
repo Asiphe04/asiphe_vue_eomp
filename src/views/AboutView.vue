@@ -151,21 +151,21 @@
           <img
             class="animate__animated animate__bounce animate__infinite"
             width="60px"
-            src="https://i.postimg.cc/Bbp59qpM/soc-removebg-preview.png"
+            src="https://i.postimg.cc/SKNhrPYr/soccer-ball-removebg-preview.png"
             alt=""
           />
           <!-- Coding -->
           <img
             class="animate__animated animate__bounce animate__infinite"
             width="60px"
-            src="https://i.postimg.cc/853qZhHS/coding-removebg-preview.png"
+            src="https://i.ibb.co/52cW4X7/coding-removebg-preview.png"
             alt=""
           />
           <!-- Netflix -->
           <img
             class="animate__animated animate__bounce animate__infinite"
             width="60px"
-            src="https://i.postimg.cc/ZYxxycmp/net-removebg-preview.png"
+            src="https://i.postimg.cc/cHd6Shzk/netflix2-removebg-preview.png"
             alt=""
           />
 
@@ -173,7 +173,7 @@
           <img
             class="animate__animated animate__bounce animate__infinite"
             width="60px"
-            src="https://i.postimg.cc/dtWR5VL0/ch-removebg-preview.png"
+            src="https://i.postimg.cc/bvVY7PQr/chess.webp"
             alt=""
           />
         </div>
@@ -183,19 +183,19 @@
 <p>*hover</p>
 <div class="container" id="inspirators">
   <div class="inspirator">
-    <img src="https://i.postimg.cc/QMmrJnCK/phir-removebg-preview-removebg-preview.png" alt="Phindile " class="inspirators-pic">
+    <img src="https://i.ibb.co/b7npXRV/phir-removebg-preview-removebg-preview.png" alt="Phindile " class="inspirators-pic">
     <span class="name">Phindile</span>
   </div>
   <div class="inspirator">
-    <img src="https://i.postimg.cc/W1kJf0c7/mosh-removebg-preview.png" alt="Mosh" class="inspirators-pic">
+    <img src="https://i.ibb.co/XkNDn5q/mosh-removebg-preview.png" alt="Mosh" class="inspirators-pic">
     <span class="name">Mosh</span>
   </div>
   <div class="inspirator">
-    <img src="https://i.postimg.cc/mkC05dVs/steve-jobs-removebg-preview.png" alt="Steve Jobs" class="inspirators-pic">
+    <img src="https://i.ibb.co/ZdwVfRK/steve-jobs-removebg-preview.png" alt="Steve Jobs" class="inspirators-pic">
     <span class="name">Steve Jobs</span>
   </div>
   <div class="inspirator">
-    <img src="https://i.postimg.cc/sgXTB6Sg/jp-removebg-preview.png" alt="Jordan Peterson" class="inspirators-pic">
+    <img src="https://i.ibb.co/TTM81YV/jp-removebg-preview.png" alt="Jordan Peterson" class="inspirators-pic">
     <span class="name">Jordan Peterson</span>
   </div>
 </div>
@@ -264,7 +264,7 @@ export default{
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-image: url("https://i.postimg.cc/j5yJmsND/C12-Asiphe-Ndimlana-3.jpg");
+background-image: url("https://i.ibb.co/DDRywPM/stereo.png");
   background-size: cover;
   background-position: center;
   margin: 0 auto; 

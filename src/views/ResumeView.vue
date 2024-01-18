@@ -2,7 +2,7 @@
 <h1 class="m-1">My Resume</h1>
 <div class="container d-flex">
   <div class="lol col-6">
-    <img src="https://i.postimg.cc/HsszXLvy/an-logo-letter-monogram-slash-with-modern-logo-designs-template-vector-removebg-preview-1.png" alt="" id="img-container">
+    <img src="https://i.ibb.co/SJcJC70/an-logo-letter-monogram-slash-with-modern-logo-designs-template-vector-removebg-preview-1-1.png" alt="" id="img-container">
 </div>
 <div class="info-container col-6">
   <p class="hover-text">Hover for more details</p>
@@ -159,7 +159,7 @@
     </div>
     <div class="card p-2 m-2">
       
-      <img src="https://i.postimg.cc/QCbTMDXM/IMG-20230922-WA0007.jpg" alt="" class="img-achive">
+      <img src="https://i.ibb.co/JcPbMMq/IMG-20230922-WA0007.jpg" alt="" class="img-achive">
       <div class="info">
         <h4>Full- Stack Development</h4>
      

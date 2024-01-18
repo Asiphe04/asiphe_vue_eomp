@@ -119,13 +119,13 @@ export default {
     width: 320px;
   height: 312px;
   border-radius: 50%;
-  background-image: url("https://i.postimg.cc/j5yJmsND/C12-Asiphe-Ndimlana-3.jpg");
+ background-image: url("https://i.ibb.co/DDRywPM/stereo.png");
   background-size: cover;
   background-position: center;
 }
 @media (max-width: 300px)  and (max-width: 400px) {
   .container {
-  background-image: url("https://i.postimg.cc/j5yJmsND/C12-Asiphe-Ndimlana-3.jpg");
+ background-image: url("https://i.ibb.co/DDRywPM/stereo.png");
   background-size: cover;
   background-position: center;
   width: 200px;
