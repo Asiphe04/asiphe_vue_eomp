@@ -9,7 +9,7 @@
 
 
 
-<a href="/files/AP_Ndim_resume.pdf" download target="_blank">
+<a href="/files/A NDIMLANA UPDATED CV.pdf" download target="_blank">
 <button class="btn"><i  class="fa fa-download"></i>Resume</button>
 </a>
 
