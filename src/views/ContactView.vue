@@ -102,7 +102,7 @@ export default {
   border-radius: 3%;
     height: 350px;
     width: 500px;
-    background-image: url("https://i.postimg.cc/zGr9kGjy/IMG-20220430-WA0017.jpg");
+    background-image: url("https://i.ibb.co/F6qZmJW/IMG-6ioonm-1.jpg");
     background-size: cover;
   background-position: center;
 }

@@ -119,7 +119,7 @@
     <div class="card p-2 m-2">
            <div class="img">
       </div>
-      <img class="img-achive" src="https://i.postimg.cc/FRG9Px04/Introduction-to-Cybersecurity-Badge20231114-45-5d48m4.png" alt="">
+      <img class="img-achive" src="https://i.ibb.co/qFLCStM/Introduction-to-Cybersecurity-Badge20231114-45-5d48m4-page-0001.jpg" alt="">
       <div class="info">
         <h4>Intro to Cybersecurity</h4>
       
@@ -129,7 +129,7 @@
     <div class="card p-2 m-2">
            <div class="img">
       </div>
-      <img class="img-achive" src="https://i.postimg.cc/Bb2KWXSL/Networking-Basics-Badge20231020-29-hvhdj7.png" alt="">
+      <img class="img-achive" src="https://i.ibb.co/zNwd8vN/Networking-Basics-Badge20231020-29-hvhdj7-page-0001.jpg" alt="">
       <div class="info">
         <h4>Networking Basics</h4>
       
@@ -139,7 +139,7 @@
     <div class="card p-2 m-2">
            <div class="img">
       </div>
-      <img class="img-achive" src="https://i.postimg.cc/pry4wZkT/aws-educate-introduction-to-cloud-101.png" alt="">
+      <img class="img-achive" src="https://i.ibb.co/MR6sp1X/aws-educate-introduction-to-cloud-101.png" alt="">
       <div class="info">
         <h4>AWS Intro to Cloud 101</h4>
       
@@ -149,7 +149,7 @@
     <div class="card p-2 m-2">
       <div class="img">
       </div>
-         <img class="img-achive" src="https://i.postimg.cc/c4z3qyQW/Operating-Systems-Basics-Badge20231006-29-7ws0e0-1-page-0001.jpg" alt="" >
+         <img class="img-achive" src="https://i.ibb.co/68jkhKr/Operating-Systems-Basics-Badge20231006-29-7ws0e0-1-page-0001-1.jpg" alt="" >
      
       <div class="info">
         <h4>Operating Systems</h4>
@@ -168,7 +168,7 @@
     </div>
      <div class="card p-2 m-2">
       
-      <img src="https://i.postimg.cc/qvPM97nd/IMG-20230928-095750.jpg" alt="" class="img-achive">
+      <img src="https://i.ibb.co/T0W3wr4/capstone-page-0001.jpg" alt="" class="img-achive">
       <div class="info">
         <h4>Top Capstone Project (99%)</h4>
      
