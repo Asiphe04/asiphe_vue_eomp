@@ -13,7 +13,7 @@
           ></a>
           <a :href="project.netlify" class="text-white text-decoration-none" target="_blank">
             <button class="netlify-btn" >
-              <img class="netlify-img" src="https://i.postimg.cc/ZqY70C01/icons8-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-sta.png" alt="">
+              <img class="netlify-img" src="https://i.postimg.cc/G3XwC74n/live-link-removebg-preview.png" alt="">
             </button>
          </a>
               </div>
