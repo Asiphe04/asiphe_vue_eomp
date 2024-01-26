@@ -48,7 +48,7 @@
           <h4>LC Studio</h4>
           <h3>Intern</h3>
           <p>
-        Currently on the cloud learning journey wherebyb I'm completing Cisco Networking and Cybersecurity certificates
+        Currently on the cloud learning journey whereby I'm completing Cisco Networking and Cybersecurity certificates
           </p>
         </div>
       </li> 
