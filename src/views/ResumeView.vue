@@ -116,6 +116,17 @@
     </div>
 </div>
 <div v-if="activeTab === 'achievements'" class="achievements wrapper d-flex flex-wrap ">
+   <div class="card p-2 m-2">
+           <div class="img">
+      </div>
+      <img class="img-achive" src="https://i.postimg.cc/bNRS9KKs/Network-Technician-Career-Path-Badge20240201-37-q7fw6u.png" alt="">
+      <div class="info">
+        <h4>Networking Essentials</h4>
+      
+
+      </div>
+    </div>
+  
     <div class="card p-2 m-2">
            <div class="img">
       </div>
