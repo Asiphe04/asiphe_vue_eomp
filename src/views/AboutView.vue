@@ -104,15 +104,7 @@
         
     </div>
      <hr class="my-1" />
-    <div class="row">
-        <div class="col-6 col-md-4">
-           <h5 class="text-start">Willing to relocate:</h5>
-        </div>
-        <div class="col-6 col-md-8">
-       <p class="text-start">Yes</p>
-        </div>
-    </div>
-     <hr class="my-1" />
+ 
     
 </div>
 
