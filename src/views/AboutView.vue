@@ -26,9 +26,7 @@
     <h5 class="text-start">Email:</h5>
     <p class="text-start email">asiphendimlana40@gmail.com</p>
     <hr class="my-1" />
-    <h5 class="text-start">Willing to relocate:</h5>
-    <p class="text-start">Yes</p>
-    <hr class="my-1" />
+    
 </div>
 
 <div class="d-md-none col-12 mt-5">
@@ -178,28 +176,7 @@
           />
         </div>
         <!-- End of interests -->
-<!-- Inspirators -->
-<h1>My inspirators</h1>
-<p>*hover</p>
-<div class="container" id="inspirators">
-  <div class="inspirator">
-    <img src="https://i.ibb.co/b7npXRV/phir-removebg-preview-removebg-preview.png" alt="Phindile " class="inspirators-pic">
-    <span class="name">Phindile</span>
-  </div>
-  <div class="inspirator">
-    <img src="https://i.ibb.co/XkNDn5q/mosh-removebg-preview.png" alt="Mosh" class="inspirators-pic">
-    <span class="name">Mosh</span>
-  </div>
-  <div class="inspirator">
-    <img src="https://i.ibb.co/ZdwVfRK/steve-jobs-removebg-preview.png" alt="Steve Jobs" class="inspirators-pic">
-    <span class="name">Steve Jobs</span>
-  </div>
-  <div class="inspirator">
-    <img src="https://i.ibb.co/TTM81YV/jp-removebg-preview.png" alt="Jordan Peterson" class="inspirators-pic">
-    <span class="name">Jordan Peterson</span>
-  </div>
-</div>
-<!-- End of inspirators -->
+
 
     </div>
  

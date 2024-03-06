@@ -41,14 +41,26 @@
 <div v-if="activeTab === 'experience'" class="experience">
 
   <div class="timeline">
+    <ul class="unlisted"> 
+      <li class="list">
+        <span>Feb 2024 - Present</span>
+        <div class="content">
+          <h4>Barefoot Cyber</h4>
+          <h3>Cybersecurity Intern</h3>
+          <p>
+       Focusing more on SOC, IRS and IDS , also using many SIEM softwares .
+          </p>
+        </div>
+      </li> 
+</ul>
   <ul class="unlisted"> 
       <li class="list">
-        <span>Oct 2023 - Present</span>
+        <span>Oct 2023 - Feb 2024</span>
         <div class="content">
           <h4>LC Studio</h4>
           <h3>Intern</h3>
           <p>
-        Currently on the cloud learning journey whereby I'm completing Cisco Networking and Cybersecurity certificates
+        I was on the cloud learning journey whereby I was completing Cisco Networking and Cybersecurity certificates
           </p>
         </div>
       </li> 
