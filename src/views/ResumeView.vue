@@ -1,10 +1,10 @@
 <template>
-<h1 class="m-1">My Resume</h1>
+<!-- <h1 class="m-1">My Resume</h1> -->
 <div class="container d-flex">
-  <div class="lol col-6">
+  <!-- <div class="lol col-6">
     <img src="https://i.ibb.co/SJcJC70/an-logo-letter-monogram-slash-with-modern-logo-designs-template-vector-removebg-preview-1-1.png" alt="" id="img-container">
-</div>
-<div class="info-container col-6">
+</div> -->
+<!-- <div class="info-container col-6">
   <p class="hover-text">Hover for more details</p>
   <div class="radio-inputs m-3 justify-content-center align-items-center ">
   <label class="radio">
@@ -211,7 +211,7 @@
     
     
   </div>
-  </div>
+  </div> -->
 
 </div>
 
@@ -245,6 +245,14 @@ export default {
 </script>
 
 <style scoped>
+.container{
+  background-image: url('https://i.postimg.cc/1XH0DQGm/71-Ugwa-C4-Dj-L-AC-UF1000-1000-QL80-Dp-Weblab.jpg');
+  height: 512px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 40px;
+  width: 100%;
+}
 /* #img-container.dark-mode{
   background-image: url('https://i.postimg.cc/WzVpDC22/634455157d2e665d824a49064524b49a-removebg-preview.png');
 } */

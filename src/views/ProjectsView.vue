@@ -1,8 +1,8 @@
 <template>
- <h1  class="m-1">My projects</h1>
+ <!-- <h1  class="m-1">My projects</h1> -->
  <div class="container">
-  <h3  class="text-start text-center">Some of projects I've done</h3>
-<p>Hover for more details</p>
+  <!-- <h3  class="text-start text-center">Some of projects I've done</h3>
+<p>Hover for more details</p> -->
   <!-- <div class="radio-inputs m-3 justify-content-center align-items-center text-center">
  
   <label class="radio" id="experience-btn">
@@ -24,9 +24,9 @@
   </label>
 </div> -->
 </div>
-   <div v-if="projects" class="products_container row row-cols-4 m-0">
-   <CardComp v-for="project of projects" :key="project.id" :project="project" />
-   </div>
+   <!-- <div v-if="projects" class="products_container row row-cols-4 m-0">
+   <CardComp v-for="project of projects" :key="project.id" :project="project" /> -->
+   <!-- </div> -->
    <!-- <div v-else><h1>Error:404</h1></div> -->
 </template>
 <script>
@@ -45,6 +45,14 @@
   }
 </script>
 <style scoped>
+.container{
+  background-image: url('https://i.postimg.cc/1XH0DQGm/71-Ugwa-C4-Dj-L-AC-UF1000-1000-QL80-Dp-Weblab.jpg');
+  height: 512px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 40px;
+  width: 100%;
+}
   .radio-inputs {
   position: relative;
   display: flex;

@@ -1,18 +1,18 @@
 <template>
 <div class="container blur-animation"> 
-  </div>
+  <!-- </div>
   <h1>Asiphe Ndimlana</h1> 
   <div class="d-flex justify-content-center">
-  <h3  id="word" ref="wordRef">[ I am a </h3> <h3> ]</h3>
+  <h3  id="word" ref="wordRef">[ I am a </h3> <h3> ]</h3> -->
 </div>
   <br>
 
 
 
-<a href="/files/blue professional modern CV resume.pdf" download target="_blank">
+<!-- <a href="/files/blue professional modern CV resume.pdf" download target="_blank"> -->
   
-<button class="btn"><i  class="fa fa-download"></i>Resume</button>
-</a>
+<!-- <button class="btn"><i  class="fa fa-download"></i>Resume</button> -->
+<!-- </a> -->
 
 
 
@@ -78,7 +78,13 @@ export default {
 
 
 .container {
-  transition: filter 0.5s; 
+  /* transition: filter 0.5s;  */
+  background-image: url('https://i.postimg.cc/1XH0DQGm/71-Ugwa-C4-Dj-L-AC-UF1000-1000-QL80-Dp-Weblab.jpg');
+  height: 512px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 40px;
+  width: 100%;
 }
 
 @keyframes blur {
@@ -110,7 +116,7 @@ export default {
 }
 
 /* Darker background on mouse-over */
-.btn:hover {
+/* .btn:hover {
   background-color: var(--secondary-color);
 }
 
@@ -134,6 +140,6 @@ export default {
   border-radius: 50%;
 }
 
-}
+} */
 
 </style>

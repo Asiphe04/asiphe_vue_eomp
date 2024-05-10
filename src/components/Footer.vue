@@ -10,7 +10,7 @@
      
       <div class="footer-container text-center">
         <p class="text-white p-1">
-          Copyright &copy; 2023 All Rights Reserved by Asiphe Ndimlana
+          Copyright &copy; 2024 All Rights Reserved by Asiphe Ndimlana
         </p>
         <div class="social-icons">
         

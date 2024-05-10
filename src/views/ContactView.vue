@@ -1,7 +1,7 @@
 <template>
-<h1  class="m-1">Contact</h1>
+<!-- <h1  class="m-1">Contact</h1> -->
 <div class="container d-flex">
-    <div class="contact-form col-6 m-4">
+    <!-- <div class="contact-form col-6 m-4">
         <span class="title">Leave a Message</span>
        <form
         class="form"
@@ -38,7 +38,7 @@
       </form>
     </div>
     <div class="col-6 m-4" id="contact-img">  
-    </div>
+    </div> -->
 </div>
 </template>
 
@@ -86,6 +86,14 @@ export default {
 };
 </script>
 <style scoped>
+.container{
+  background-image: url('https://i.postimg.cc/1XH0DQGm/71-Ugwa-C4-Dj-L-AC-UF1000-1000-QL80-Dp-Weblab.jpg');
+  height: 512px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 40px;
+  width: 100%;
+}
 
 @media (max-width:700px){
   .contact-form{
@@ -106,11 +114,11 @@ export default {
     background-size: cover;
   background-position: center;
 }
-.container {
+/* .container {
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 24px;
-}
+} */
 .title {
   font-size: 24px;
   text-align: center;

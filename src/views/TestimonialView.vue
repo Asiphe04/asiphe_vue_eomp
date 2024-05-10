@@ -1,8 +1,8 @@
 <template>
-<h1  class="m-1">My testimonial</h1>
+<!-- <h1  class="m-1">My testimonial</h1> -->
 
 <div class="container d-flex  align-items-center">
-  <div class="hey col-6 align-items-center justify-content-center text-center">
+  <!-- <div class="hey col-6 align-items-center justify-content-center text-center">
     <h1 class="mt-5">What people say about me:</h1>
   </div>
   <div class="col-6 scrollable-div">
@@ -11,7 +11,7 @@
    <TestCardComp v-for="testimonial of testimonials" :key="testimonial.id" :testimonial="testimonial" />
    </div>
    <div v-else><h1>Error:404</h1></div>
-</div>
+</div> -->
 </div>
 </template>
 
@@ -32,6 +32,14 @@
 </script>
 
 <style scoped>
+.container{
+  background-image: url('https://i.postimg.cc/1XH0DQGm/71-Ugwa-C4-Dj-L-AC-UF1000-1000-QL80-Dp-Weblab.jpg');
+  height: 512px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 40px;
+  width: 100%;
+}
 @media (max-width:300px){ 
   .hey{
 display: none;
