@@ -1,10 +1,10 @@
 <template>
-<!-- <h1 class="m-1">My Resume</h1> -->
+<h1 class="m-1">My Resume</h1>
 <div class="container d-flex">
-  <!-- <div class="lol col-6">
+  <div class="lol col-6">
     <img src="https://i.ibb.co/SJcJC70/an-logo-letter-monogram-slash-with-modern-logo-designs-template-vector-removebg-preview-1-1.png" alt="" id="img-container">
-</div> -->
-<!-- <div class="info-container col-6">
+</div>
+ <div class="info-container col-6">
   <p class="hover-text">Hover for more details</p>
   <div class="radio-inputs m-3 justify-content-center align-items-center ">
   <label class="radio">
@@ -17,10 +17,10 @@
     <span class="name ">Experience</span>
   </label>
       
-  <label class="radio">
+  <!-- <label class="radio">
     <input type="radio" name="radio" v-model="activeTab" value="education">
     <span class="name">Education</span>
-  </label>
+  </label> -->
    <label class="radio">
     <input type="radio" name="radio"  v-model="activeTab" value="Softskills">
     <span class="name">Prof. Skills</span>
@@ -33,11 +33,11 @@
 <div v-if="activeTab === 'skills'" class="d-flex flex-wrap">
   <SkillsComp v-for="skill of skills" :key="skill.id" :skill="skill" />
 </div>
-   <div v-else-if="activeTab === 'education'" class="timeline">
+   <!-- <div v-else-if="activeTab === 'education'" class="timeline">
   <ul>
     <timelineComp v-for="timeline of timelines" :key="timeline.id" :timeline="timeline" />
   </ul>
-</div>
+</div> -->
 <div v-if="activeTab === 'experience'" class="experience">
 
   <div class="timeline">
@@ -45,7 +45,7 @@
       <li class="list">
         <span>Feb 2024 - Present</span>
         <div class="content">
-          <h4>Barefoot Cyber</h4>
+          <h4><a href="https://www.barefootcyber.com/" class="company-name">Barefoot Cyber</a></h4>
           <h3>Cybersecurity Intern</h3>
           <p>
        Focusing more on SOC, IRS and IDS , also using many SIEM softwares .
@@ -57,10 +57,10 @@
       <li class="list">
         <span>Oct 2023 - Feb 2024</span>
         <div class="content">
-          <h4>LC Studio</h4>
-          <h3>Intern</h3>
+          <h4><a href="https://lcstudio.co.za/" class="company-name">LC Studio</a></h4>
+          <h3>Cloud Intern</h3>
           <p>
-        I was on the cloud learning journey whereby I was completing Cisco Networking and Cybersecurity certificates
+        I was on the cloud learning journey whereby I was completing Cisco Networking and Cybersecurity courses and getting certificates along the way
           </p>
         </div>
       </li> 
@@ -97,18 +97,18 @@
             <h4>Creativity</h4>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4">
+        <!-- <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-           <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+           <i class="fa fa-users fa-2x" aria-hidden="true"></i>
             <h4>Leadership</h4>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
+        </div> -->
+        <!-- <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">   
-  <i class="fa fa-cog fa-3x" aria-hidden="true"></i>
+  <i class="fa fa-cog fa-2x" aria-hidden="true"></i>
             <h4>Adaptability</h4>
           </div>
-        </div>
+        </div> -->
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
            <i class="fa fa-tasks fa-3x" aria-hidden="true"></i>
@@ -211,7 +211,7 @@
     
     
   </div>
-  </div> -->
+  </div> 
 
 </div>
 
@@ -245,14 +245,19 @@ export default {
 </script>
 
 <style scoped>
-.container{
+.company-name{
+  text-decoration: none;
+  color: white;
+
+}
+/* .container{
   background-image: url('https://i.postimg.cc/1XH0DQGm/71-Ugwa-C4-Dj-L-AC-UF1000-1000-QL80-Dp-Weblab.jpg');
   height: 512px;
   background-size: cover;
   background-position: center;
   margin-top: 40px;
   width: 100%;
-}
+} */
 /* #img-container.dark-mode{
   background-image: url('https://i.postimg.cc/WzVpDC22/634455157d2e665d824a49064524b49a-removebg-preview.png');
 } */

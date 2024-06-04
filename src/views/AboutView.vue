@@ -1,7 +1,7 @@
 <template>
 <br>
   <div class="container d-flex justify-content-center align-content-center text-center">
-  <!-- <div class="d-none d-md-block col-2 mt-5">
+  <div class="d-none d-md-block col-2 mt-5">
     <h3 class="text-start">PROFILE</h3>
     <hr class="my-1" />
     
@@ -27,8 +27,8 @@
     <p class="text-start email">asiphendimlana40@gmail.com</p>
     <hr class="my-1" />
     
-</div> -->
-<!-- 
+</div>
+
 <div class="d-md-none col-12 mt-5">
     <h3 class="text-start">PROFILE</h3>
     <hr class="my-1" />
@@ -106,31 +106,32 @@
      <hr class="my-1" />
  
     
-</div> -->
+</div>
 
     
     <!-- End of information -->
-    <!-- <div class="col-7 align-items-center justify-content-center text-center">
-      <h1 class="text-center">About me</h1> -->
-      <!-- <h3 class="text-center justify-content-center align-content-center align-items-center">Let me introduce myself</h3> -->
+    <div class="col-7 align-items-center justify-content-center text-center">
+      <h1 class="text-center">About me</h1>
+      <h3 class="text-center justify-content-center align-content-center align-items-center">Who is Asiphe? 🤔</h3>
     
-        <!-- <div class="img-container align-items-center justify-content-center text-center d-flex"></div> -->
+        <div class="img-container align-items-center justify-content-center text-center d-flex"></div>
    
-    <!-- <div class="text-container text-center m-4">
+    <div class="text-container text-center m-4">
     <p style="font-size: 20px;" class="text-start">
-        I am a developer hailing from Cape Town. My journey in coding began in 2019, during my Grade 10 year. Initially in High School, I dabbled in Delphi 7 before pivoting to focus on HTML, CSS, JavaScript, and many more.
+      ⚡ I am a proactive and hardworking Cybersecurity Analyst and DevSecOps Engineer still in the early stages of my career in the cloud computing and cloud platform administration space.
 <br>
-        I have a passion for learning and am always eager to explore new technologies and stay up-to-date with industry trends.I hold a full-stack certificate from Life Choices Academy  and have gained proficiency in various programming languages and frameworks, including JavaScript, Python, Vue.js Nuxt and many more.
+<br>  
+        I have a passion for learning and am always eager to explore new technologies and stay up-to-date with industry trends.I have gained proficiency in various programming languages and frameworks, including JavaScript, Python, Vue.js Nuxt and many more.
 <br>
 <br>
         In my professional interactions, I adopt a formal tone of voice and always strive for clean and efficient code. When I'm not busy coding, I enjoy working on my numerous <a class="text-link text-decoration-none" href="/projects">projects</a >. I take pride in my open-source contributions, which you can explore on my GitHub profile.
 
         Feel free to <a class="text-link text-decoration-none" href="/contact">reach out</a > if you want to talk about work or just geek out in general. I'm always open to collaborating on exciting new projects and sharing knowledge with fellow tech enthusiasts.
     </p>
-</div> -->
+</div>
 
-    <!-- </div> -->
-    <!-- <div class="col-4 mt-5">
+    </div>
+    <div class="col-4 mt-5">
       <h2 class="mb-3">
        My hobbies
       </h2 >
@@ -171,7 +172,7 @@
 
 
     </div>
-  -->
+ 
   </div>
 </template>
 
@@ -182,14 +183,14 @@ export default{
 </script>
 
 <style scoped>
-.container{
+/* .container{
   background-image: url('https://i.postimg.cc/1XH0DQGm/71-Ugwa-C4-Dj-L-AC-UF1000-1000-QL80-Dp-Weblab.jpg');
   height: 512px;
   background-size: cover;
   background-position: center;
   margin-top: 40px;
   width: 100%;
-}
+} */
 .inspirator:hover .name {
   display: block;
 }
